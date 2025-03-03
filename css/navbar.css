@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Krub';
+    src: url('../fonts/Krub-Regular.ttf') format('truetype');
+}
+body{
+    margin: 0;
+}
+
+  nav, 
+#menu-checkbox{
+    display: none;
+}  
+
+header{
+    font-family: 'Krub';
+    box-shadow: 0px 30px 20px  #000000;
+    position: relative;
+    padding: 0px;
+    margin:0;
+    background-image: linear-gradient( to right, #0C098C 37%, #0597F2 69%);
+    width:auto;
+}
+
+header{
+    height: 70px;
+}
+
+nav{
+    display: block;
+    position: static;
+    background-color: inherit;
+}
+
+.navbar-item{
+    color: #fff;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2% 5%;
+    font-size: 1.5rem;
+    
+  
+    
+}
+
+.hamburger-icon{
+    display:none;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+.game-hub-logo{
+    height: 110px;
+    width: 190px;
+    position: absolute;
+    right: 300px;
+    top: 10px;
+}
+.cart-wrapper{
+    position: absolute;
+    right: 50px;
+    top: 15px;
+}
+.shopping-cart{
+   
+    height: 38px;
+    width: 38px;
+}
+.cart-info{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background-color: red;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: small;
+    text-align: center;
+    color:#fff;  
+}
+
+.active {
+    text-decoration: underline;
+    color:#BB06A3;
+    font-weight: bolder;
+}
+
+@media(max-width: 800px){
+    nav, 
+    #menu-checkbox{
+        display: none;
+    }
+    
+    #menu-checkbox:checked ~ nav{
+        display: block;
+    }
+    
+    nav {
+        position: absolute;
+        left: 0px;
+        background-color: #0C098C;
+    }
+    .navbar-item{
+        display: block;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 1rem;
+        text-decoration: none;
+    
+    }
+    
+    .game-hub-logo{
+        height: 48px;
+        width: 79px;
+        position: absolute;
+        right: 200px;
+        top: 10px;
+    }
+    .fa-solid {
+        color:#fff;
+    }
+   
+    .shopping-cart{
+        height: 31px;
+        width: 31px;
+    }
+    .cart-info{
+        width: 15px;
+        height: 15px;
+        font-size: small;
+    }
+    .hamburger-icon{
+        display:inline;
+      
+    }
+    .active {
+        text-decoration: underline;
+        color:#BB06A3;
+        font-weight: bolder;
+    }
+}
+@media (max-width: 1300px){
+    .game-hub-logo{
+        height: 70px;
+        width: auto;
+        position: absolute;
+        right: 100px;
+        top: 20px;
+    }
+}
+
+
+
+
+

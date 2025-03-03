@@ -1,0 +1,27 @@
+Process🔗
+Bug Fixing
+Open up your developer tools in your browser.
+Use the responsive design mode and make sure that there are no horizontal scrollbars at any width, as well as that the site looks good across screen sizes.
+If you do encounter bugs and issues, use the developer tools to figure out what went wrong and how to fix it.
+Use the Wave tools to test the site’s accessibility.
+Use the W3C Markup Validation Service to test the HTML of your site.
+Animations and Transitions
+Consider if there are any places you can add animations or transitions to your website to smooth out the interactions. If there are, add them to the website.
+CSS Variables
+Identify values that get used often, fonts and colors are usually good examples.
+Create your CSS Variables and update the values to use your newly created variables.
+Questions to ask yourself about the CA so far
+Is my code bug-free?
+Can I use CSS Variables to avoid repeated values?
+Can I use animations and transitions to smooth interactions on the site?
+To help answer these questions, you can use:
+
+W3C Validator
+Test on different devices
+Outcomes for this module🔗
+You should now be able to say:
+
+“I write bug-free HTML”
+“I am confident with using CSS Variables”
+“I understand how animations and transitions are added, and can add them to a website”
+

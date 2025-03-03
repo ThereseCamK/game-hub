@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The home page to Game Hub site." />
+    <title>GAME HUB</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header >
+        <input type="checkbox" id="menu-checkbox"/>
+        <label for="menu-checkbox" class="hamburger-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav >
+                <a title="Go to homepage" class="navbar-item " href="../index.html">Home</a>
+                <a title="Go to GameShop page" class="navbar-item" href="/html-pages/games.html">Games</a>
+                <a title="Go to about us page" class="navbar-item active" href="/html-pages/about.html">About</a>
+                <a title="Go to contact page" class="navbar-item" href="/html-pages/contact.html">Contact</a>
+        </nav>
+
+            <a class="navbar-item" href="../index.html">
+                <img class="game-hub-logo"  src="/images/gameHub_Logo.png" alt="game hub logo"/>
+            </a> 
+
+            <div class="cart-wrapper">
+             <a class="cart-link" href="/html-pages/cart.html"><img title="go to cart" class="shopping-cart" src="/images/cart-icon.png" alt="shoppingcart"/> 
+                <div class="cart-info empty"> 0 </div>
+            </a>
+        </div>
+     
+    </header>
+  
+    <main>
+        <section>
+
+            <h1>About page</h1>
+            
+        </section>
+    </main>
+    
+
+
+    <footer class="footer-img footer-size">
+        <div class="footer-content footer-size">
+            <section class="subscription-wrapper">
+                <h1>Newsletter</h1>
+                <p>Want to know what news that's coming before everyone else? Sign up for newsletter to ger the hot news. </p>
+                <label for="email"></label>
+                <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                placeholder="Email Address"
+                title="Enter your email address here"
+                class="sub-mail">
+                <button title="subscribe" class="sub-btn">Subscribe</button>
+            </section>
+
+            <section class="some-wrapper">
+                <h2>Follow us</h2>
+               
+                    <img title="Go to GameHub on Facebook" class="some-icons " src="/icons/Facebook.png">
+                    <img title="Go to GameHub on Instagram" class="some-icons " src="/icons/Instagram.png">
+                    <img title="Go to GameHub on Youtube" class="some-icons " src="/icons/Youtube.png">
+                
+            </section>
+
+            <section class="contact-info">
+                <h3>Contact</h3>
+                <p >Phone: </p>
+                <p class="contact">+1 (555) 987-6543</p>
+                <p>Email: </p>
+                <p class="contact"> contact@gamehubstore.com</p>
+            </section>
+            <img class="logo-in-footer" src="/images/gameHub_Logo.png">
+
+            <div class="copyright"> copyright © 2024-2025 <a>Privacy Policy</a> All Rights Served.</div>
+
+        </div>
+            
+    </footer>
+
+        
+</body>
+</html>

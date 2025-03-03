@@ -1,0 +1,33 @@
+Process🔗
+Positioning
+Consider which elements need to use positioning. This is crucial because sometimes positioning is incorrectly used. A good example of where to use positioning is if there’s a ‘View More’ button on the bottom right of a container. Or if the navigation is fixed to the top of the viewport.
+
+Use positioning sparingly as it’s a common pitfall for students to overuse positioning rather than layout tools like Flexbox and CSS Grids.
+
+Add the positioning.
+Flexbox
+Look across your site and consider where you might implement Flexbox to create your layouts. Flexbox is especially good at placing items next to each other. If you have a two column layout for your page, Flexbox is perfect for that.
+
+Find where Flexbox is best implemented to improve your website.
+Add display: flex and any other Flexbox properties as appropriate.
+Test your website.
+CSS Grids
+Find where CSS Grids are best implemented to improve your website.
+Add display: grid and any other CSS Grids properties as appropriate.
+Test your website.
+Media Queries
+Start with the mobile view and write styles to get the best view on mobile as global styles.
+Next make a media query for a larger screen. The viewport size you choose to target will be based on what is best for the design but is likely to be around 500-600px wide.
+Keep going up until you’re writing styles for desktop. This is the mobile-first approach.
+Questions to ask yourself about the CA so far
+Am I using positioning effectively and appropriately?
+Can I use CSS Grids and/or Flexbox to create responsive websites?
+To help answer these questions, you can:
+
+Test the site on different devices
+Your developer tools to view the site at different viewport widths
+Outcomes for this module🔗
+You should now be able to say:
+
+“I can use positioning effectively”
+“I can create responsive websites”
