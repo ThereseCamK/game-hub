@@ -79,7 +79,7 @@ nav,
 
 header{
     grid-area: header;
- 
+    position: sticky;
     background-image: var(--linear-gradient-to-right);
     min-width: 100%;
     height: 65px;
@@ -165,20 +165,18 @@ font-weight: bolder;
 /*MAIN*/
 main{
     grid-area: main;
-    background-color: pink;
+    
     min-height: calc(100vh - 200px);
 }
 
 /*Sellingpoint  NOT FINISH*/
-/* .selling-point-background{
+.selling-point-background{
 
     background-image: url("/images/controller.jpg");
     background-size: cover;
     background-position-y: bottom;
-    min-width: 100%;
     height: 70px;
-    z-index: -1;
-
+    z-index: -2;
     padding-top: 65px;
 
 }
@@ -187,10 +185,12 @@ main{
     background-color: rgba(12, 9, 140, 0.47);
     color:white;
     font-size: 14px;
-    position: absolute;
-    min-width: 100%;
-    height: 130px;
-    top: 70px;
+    position: absolute; 
+    width: 100%;
+    height: 135px;
+    top: 65px; 
+    z-index: 0;
+
 }
 .selling-point p{
     margin: 5%;
@@ -201,7 +201,61 @@ main{
     position: relative;
     right: -40%;
     bottom: 5px;
-} */
+}
+
+
+/*contactpage*/
+.contact-page-wrapping{
+    width: 100vw;
+    /* position: absolute; */
+    top: 22%;
+   
+
+}
+.some-item{
+    height: 30px;
+    width: 32px;
+    margin: 20px;
+}
+.floated{
+    float: left;
+}
+.contact-page-wrapping h1{
+    color: #0C098C;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+}
+.contact-page-info{
+    background-image: linear-gradient( to bottom, #220842 30%, #0597F2 70%);
+    color:white;
+    border: solid black 2px;
+    border-radius: 10%;
+    font-size: 12px;
+    height: 261px;
+    margin: 10px;
+    padding: 10px;
+
+}
+.address{
+    margin-top: 25px;
+}
+.address p{
+    line-height: 3px;
+    
+}
+
+.contact-img{
+    background-image: url('/images/man2.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    border:#000000 2px solid;
+    position: absolute;
+    left: 65%;
+    top: 60%;
+}
 
 
 /*FOOTER*/
