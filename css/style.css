@@ -10,8 +10,7 @@
 body{
     margin: 0;
     padding: 0;
-   
- 
+    min-height: auto;
 }
 
 /* --------------------------mobile------------------- */
@@ -26,15 +25,24 @@ nav,
 #menu-checkbox:checked ~ nav{
     display: block;
 }
+
 header{
+    position: sticky;
     font-family: 'Krub';
-    box-shadow: 0px 30px 20px  #000000;
-    position: absolute;
+    box-shadow: 0px 20px 20px  #000000;
     background-image: linear-gradient( to right, #0C098C 37%, #0597F2 69%);
     min-width: 100%;
     height: 65px;
     top: 0px;
+    z-index: 1;
+
 }
+
+/* header::after{
+    content: '';
+    clear: both;
+
+} */
 
 nav {
     position: absolute;
@@ -46,8 +54,6 @@ nav {
     color: #fff;
     font-size: 1rem;
     text-decoration: none;
-    
-
 }
 
 .game-hub-logo{
@@ -55,7 +61,7 @@ nav {
     width: 79px;
     position: absolute;
     right: 100px;
-    top: 10px;
+    
 }
 .fa-solid {
     color:#fff;
@@ -101,9 +107,100 @@ nav {
     font-weight: bolder;
 }
 
+/*selling-point header*/
 
+.selling-point-background{
 
+    background-image: url("/images/controller.jpg");
+    background-size: cover;
+    background-position-y: bottom;
+    min-width: 100%;
+    height: 70px;
+    z-index: -1;
+    /* position: absolute; */
+    padding-top: 65px;
+
+}
+.selling-point{
+    font-family: 'Kosugi', Arial, Helvetica, sans-serif;
+    background-color: rgba(12, 9, 140, 0.47);
+    color:white;
+    font-size: 14px;
+    position: absolute;
+    min-width: 100%;
+    height: 130px;
+    top: 70px;
+}
+.selling-point p{
+    margin: 5%;
+}
+.selling-point a{
+    color: #F205CB;
+    font-size: 18px;
+    position: relative;
+    right: -40%;
+    bottom: 5px;
+}
 /* homepage */
+main{
+    min-height: calc(100vh -215px);
+    overflow: scroll;
+}
+
+/*contactpage*/
+.contact-page-wrapping{
+    width: 100vw;
+    /* position: absolute; */
+    top: 22%;
+   
+
+}
+.some-item{
+    height: 30px;
+    width: 32px;
+    margin: 20px;
+}
+.floated{
+    float: left;
+}
+.contact-page-wrapping h1{
+    color: #0C098C;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+}
+.contact-page-info{
+    background-image: linear-gradient( to bottom, #220842 30%, #0597F2 70%);
+    color:white;
+    border: solid black 2px;
+    border-radius: 10%;
+    font-size: 12px;
+    height: 261px;
+    margin: 10px;
+    padding: 10px;
+
+}
+.address{
+    margin-top: 25px;
+}
+.address p{
+    line-height: 3px;
+    
+}
+
+.contact-img{
+    background-image: url('/images/man2.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    border:#000000 2px solid;
+    position: absolute;
+    left: 65%;
+    top: 60%;
+}
+
+
 
 /* new games */
 /* footer */
@@ -114,7 +211,8 @@ nav {
 
 .footer-content{
     /* font-size: 0.9rem; */
-    background-color: rgba(0,0,0, 62%); 
+
+    background-color: rgba(0,0,0, 62%);
     font-family: 'Kosugi';
     font-weight: normal;
     letter-spacing: 1px;
@@ -123,87 +221,98 @@ nav {
 }
 
 .footer-size{
-    position: absolute;
-    bottom: 0px;
-    min-height: 340px;
+    
+    /* bottom: 0px; */
+    min-height: 150px; 
     min-width: 100%;
+
 }
 
 .subscription-wrapper{
     position: relative;
     left:10px;
     top: 20px;
-    width: 60%;
+    width: 50%;
+    font-size: 12px;
+    margin-left:5%;
 }
 
 .sub-mail{
     background-image: url("/icons/Mail.png");
     background-repeat: no-repeat;
-    background-size: 15px;
-    background-position-y: 10px;
-    background-position-x: 10px;
-    height: 30px;
-    width: 100px;
+    background-size: 10px;
+    background-position-y: 50%;
+    background-position-x: 5px;
+    height: 15px;
+    width: 50%;
     border-radius: 10px;
     box-shadow: 10px 10px 10px black;
     background-color: rgba(250, 250, 250, 0.6);
     text-align: center;
+    font-size: 10px;
+    
 }
 
 .sub-btn{
-    height: 38px;
-    width: 100px;
+    height: 25px;
+    width: 40%;
     border-radius: 10px;
     box-shadow: 10px 10px 10px black;
-    background-color: rgba(5, 151, 242, 0.9); 
-
+    background-color: rgba(5, 151, 242, 0.9);
+    font-size: 10px;
 }
 
 .logo-in-footer{
-    position: absolute;
     height: 50px;
-    left: 20px;
-    bottom: 50px;
+    margin-top: 30px;
 }
-h2{
-    margin-left: 10px;
-}
+
 .some-wrapper{
     position: absolute;
-    text-align: left; 
+    text-align: left;
     left:62%;
-    top: 5px;
+    bottom: 10%;
     width: 35%;
-    
+    font-size: 0.5rem;
+    line-height: 1px;
+
 }
+.some-wrapper h2{
+    margin-left: 10px;
+}
+
 .some-icons{
-    width: 28px;
-    height:28px;
-    margin-right:10px;
+    width: 18px;
+    height:18px;
+    margin-right:5px;
 }
+
 .contact-info{
-    position: absolute; 
-    left:63%;
-    width: 35%;
-    top: 150px;
+    position: absolute;
+    margin: 25px 7px;
  
-   
 }
+
 .contact{
     font-size: 0.5rem;
 }
  .copyright{
-    position: absolute;
-    bottom: 20px;
-    left:10px;
-  
+
+   font-size: 6px;
+   text-align: center;
+   padding-bottom: 5%;
+
  }
 /* gamepage */
-/* contactpage */
+
 /* aboutpage */
+
 /* cart */
+
 /* checkout payment */
+
 /* checkout shipping */
+
 /* checkout success */
 
 /* tablet */
@@ -222,7 +331,7 @@ h2{
     }
 
     header{
-        position: absolute;
+        /* position: absolute; */
         height: 100px;
         min-width: 100%;
     }
@@ -250,11 +359,20 @@ h2{
         right: 150px;
         top: 20px;
     }
-  
+
     .shopping-cart{
 
         height: 38px;
         width: 38px;
+    }
+
+    /*content*/
+    .selling-point-background{
+        background-image: none;
+
+        display: none;
+
+
     }
 
 
@@ -267,8 +385,8 @@ h2{
         background-repeat: none;
         background-size: cover;
         background-position-y: center;
-    } 
-    
+    }
+
     .footer-size{
         min-height: 500px;
         min-width: 100%;
@@ -280,29 +398,29 @@ h2{
         top: 100px;
         width: 50%;
     }
-    
+
     .sub-mail{
         width: 150px;
     }
     .sub-btn{
-      
+
         width: 150px;
-      
+
     }
-    
+
     .logo-in-footer{
         height: 100px;
         width: auto;
-   
+
         left: 50px;
         bottom: 60px;
     }
     .some-wrapper{
         position: absolute;
-        text-align: left; 
+        text-align: left;
         right: 150px;
         top: 100px;
-    
+
     }
     h2{
         margin-left: 15px;
@@ -311,14 +429,14 @@ h2{
         width: 58px;
         height: 48px;
         margin-right:10px;
-    
+
     }
     .contact-info{
-        position: absolute; 
-      
+        position: absolute;
+
         top: 250px;
         font-size: 0.8rem;
-       
+
     }
     .contact{
         font-size: 1rem;
@@ -329,7 +447,7 @@ h2{
         left:10%;
         font-size: small;
      }
-    
+
 }
 
 
@@ -361,7 +479,7 @@ header{
 .footer-size{
     min-height: 500px;
     min-width: 100%;
-  
+
 }
 
 .sub-mail{
@@ -381,27 +499,27 @@ header{
 
 .contact-info{
     position: relative;
-    width: 20%; 
+    width: 20%;
     top:150px;
- 
+
 }
 .some-icons{
-  
+
     margin-right:50px;
 }
 
 /* .some-wrapper{
     position: absolute;
-    text-align: left; 
+    text-align: left;
     right: 150px;
     top: 100px;
 
       .contact-info{
-        position: absolute; 
-      
+        position: absolute;
+
         top: 250px;
         font-size: 0.8rem;
-       
+
     }
     .contact{
         font-size: 1rem;
@@ -417,11 +535,11 @@ header{
 
 /* .some-wrapper{
     position: absolute;
-    text-align: left; 
+    text-align: left;
     left:62%;
     top: 5px;
     width: 35%;
-    
+
 }
 .some-icons{
     width: 28px;
@@ -429,12 +547,12 @@ header{
     margin-right:10px;
 }
 .contact-info{
-    position: absolute; 
+    position: absolute;
     left:63%;
     width: 35%;
     top: 150px;
- 
-   
+
+
 } */
 
 

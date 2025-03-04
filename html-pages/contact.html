@@ -9,24 +9,25 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/main-page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-    <header >
+    <div>
+    <header class="main-container">
         <input type="checkbox" id="menu-checkbox"/>
         <label for="menu-checkbox" class="hamburger-icon">
             <i class="fa-solid fa-bars"></i>
         </label>
-        <nav >
+        <nav role="navigation" aria-label="Main navigation">
                 <a title="Go to homepage" class="navbar-item " href="../index.html">Home</a>
                 <a title="Go to GameShop page" class="navbar-item" href="/html-pages/games.html">Games</a>
                 <a title="Go to about us page" class="navbar-item" href="/html-pages/about.html">About</a>
                 <a title="Go to contact page" class="navbar-item active" href="/html-pages/contact.html">Contact</a>
         </nav>
 
-            <a class="navbar-item" href="../index.html">
-                <img class="game-hub-logo"  src="/images/gameHub_Logo.png" alt="game hub logo"/>
+            <a  href="../index.html">
+                <img class="game-hub-logo"  src="../images/gameHub_Logo.png" alt="game hub logo"/>
             </a> 
 
             <div class="cart-wrapper">
@@ -38,10 +39,38 @@
     </header>
   
     <main>
-        <section>
+        <section class="selling-point-background">
+            <div class="selling-point">
+                <p> Online game store that provides digital games. </p>
+                <p>At a competitive price.</p>
+                <a href="/games.html"> Shop Games Here! </a>
+            </div>
+        </section>
 
-            <h1>Contact page</h1>
-            
+        <section class="contact-page-wrapping">
+                <h1>Contact Information </h1>
+
+                <div class="contact-page-info">
+                    <h2>Game Hub</h2>
+                    <div class="address">
+                        <p>1234 Pixel Avenue, Suite 101</p>
+                        <p>Tech City, CA 90210</p>
+                        <p>USA</p>
+                    </div>
+                    
+                    <div class="address">
+                        <p>Phone: +1 (555) 987-6543</p>
+                        <p>Email: contact@gamehubstore.com</p>
+                    </div>
+                    
+
+                    <p>Please Contact us if you have any issues or questions</p>
+                    <div class="some-item floated"><img title="Go to GameHub on Facebook" class="some-icons " src="/icons/Facebook.png">Facebook</div>
+                    <div class="some-item floated"><img title="Go to GameHub on Instagram" class="some-icons " src="/icons/Instagram.png">Instagram</div>
+                    <div class="some-item floated"><img title="Go to GameHub on Youtube" class="some-icons " src="/icons/Youtube.png">Youtube</div>
+                    <div class="contact-img" ></div>
+                </div>
+
         </section>
     </main>
     
@@ -69,14 +98,15 @@
                     <img title="Go to GameHub on Instagram" class="some-icons " src="/icons/Instagram.png">
                     <img title="Go to GameHub on Youtube" class="some-icons " src="/icons/Youtube.png">
                 
-            </section>
+        
 
-            <section class="contact-info">
-                <h3>Contact</h3>
-                <p >Phone: </p>
-                <p class="contact">+1 (555) 987-6543</p>
-                <p>Email: </p>
-                <p class="contact"> contact@gamehubstore.com</p>
+                <div class="contact-info">
+                    <h3>Contact</h3>
+                    <p >Phone: </p>
+                    <p class="contact">+1 (555) 987-6543</p>
+                    <p>Email: </p>
+                    <p class="contact"> contact@gamehubstore.com</p>
+                </div>
             </section>
             <img class="logo-in-footer" src="/images/gameHub_Logo.png">
 
@@ -85,7 +115,7 @@
         </div>
             
     </footer>
-
+</div>
         
 </body>
 </html>
