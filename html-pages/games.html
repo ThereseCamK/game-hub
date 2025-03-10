@@ -3,30 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The home page to Game Hub site." />
+    <meta name="description" content="The home page to Game Hub site. where you can buy online games " />
     <title>GAME HUB</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/main-page.css">
+    <link rel="stylesheet" href="/css/main-page-tablet.css">
+    <link rel="stylesheet" href="/css/main-page-desktop.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-    <header >
+    <header class="shadow-style krub-style" >
         <input type="checkbox" id="menu-checkbox"/>
-        <label for="menu-checkbox" class="hamburger-icon">
-            <i class="fa-solid fa-bars"></i>
+        <label for="menu-checkbox" class="hamburger-icon ">
+            <span></span>
+            <span></span>
+            <span></span>
         </label>
         <nav >
-                <a title="Go to homepage" class="navbar-item " href="../index.html">Home</a>
+                <a title="Go to homepage" class="navbar-item  " href="../index.html">Home</a>
                 <a title="Go to GameShop page" class="navbar-item active" href="/html-pages/games.html">Games</a>
                 <a title="Go to about us page" class="navbar-item" href="/html-pages/about.html">About</a>
-                <a title="Go to contact page" class="navbar-item" href="/html-pages/contact.html">Contact</a>
-        </nav>
+                <a title="Go to contact page" class="navbar-item " href="/html-pages/contact.html">Contact</a>
+        </nav >
 
-            <a class="navbar-item" href="../index.html">
-                <img class="game-hub-logo"  src="/images/gameHub_Logo.png" alt="game hub logo"/>
+            <a class="logo-position" href="../index.html">
+                <img class="game-hub-logo-header"  src="../images/gameHub_Logo.png" alt="game hub logo"/>
             </a> 
 
             <div class="cart-wrapper">
@@ -39,52 +44,63 @@
   
     <main>
         <section>
+                <h1>Shopping</h1>
 
-            <h1>Game page</h1>
-            
         </section>
     </main>
-    
 
-    <footer class="footer-img footer-size">
-        <div class="footer-content footer-size">
-            <section class="subscription-wrapper">
-                <h1>Newsletter</h1>
-                <p>Want to know what news that's coming before everyone else? Sign up for newsletter to ger the hot news. </p>
-                <label for="email"></label>
-                <input 
-                type="email" 
-                name="email" 
-                id="email" 
-                placeholder="Email Address"
-                title="Enter your email address here"
-                class="sub-mail">
-                <button title="subscribe" class="sub-btn">Subscribe</button>
-            </section>
+    <footer class="kosugi-style footer-img">
+        <div class="footer-content">
+          
 
-            <section class="some-wrapper">
-                <h2>Follow us</h2>
-               
-                    <img title="Go to GameHub on Facebook" class="some-icons " src="/icons/Facebook.png">
-                    <img title="Go to GameHub on Instagram" class="some-icons " src="/icons/Instagram.png">
-                    <img title="Go to GameHub on Youtube" class="some-icons " src="/icons/Youtube.png">
+                <section class="subscribe-news">
+                    <h1>Newsletter</h1>
+                    <p>Want to know what news that's coming before everyone else? Sign up for newsletter to ger the hot news. </p>
+                </section>
                 
+                <section class="subscribe-input">
+                    <label for="email"></label>
+                    <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="Email Address"
+                    title="Enter your email address here"
+                    class="sub-mail shadow-style radius-style">
+                    <button title="subscribe" class="sub-btn shadow-style radius-style buttons-style">Subscribe</button>
+                </section>
+             
+            
+
+            <section class="footer-some-wrapper">
+                <h2>Follow us</h2>
+                    <div class="some-icons-wrap">
+                        <img title="Go to GameHub on Facebook" class="some-icons-footer " src="/icons/Facebook.png" alt="Facebook icon">
+                        <img title="Go to GameHub on Instagram" class="some-icons-footer " src="/icons/Instagram.png" alt="Instagram icon">
+                        <img title="Go to GameHub on Youtube" class="some-icons-footer " src="/icons/Youtube.png" alt="Youtube icon">
+                    </div>   
+                    
+                    <div class="footer-contact">
+                        <h3>Contact</h3>
+                        <p >Phone: </p>
+                        <p class="contact-number">+1 (555) 987-6543</p>
+                        <p>Email: </p>
+                        <p class="contact-mail"> contact@gamehubstore.com</p>
+                    </div>
             </section>
 
-            <section class="contact-info">
-                <h3>Contact</h3>
-                <p >Phone: </p>
-                <p class="contact">+1 (555) 987-6543</p>
-                <p>Email: </p>
-                <p class="contact"> contact@gamehubstore.com</p>
-            </section>
-            <img class="logo-in-footer" src="/images/gameHub_Logo.png">
+           
 
-            <div class="copyright"> copyright © 2024-2025 <a>Privacy Policy</a> All Rights Served.</div>
+            <img class="footer-logo game-hub-logo" src="/images/gameHub_Logo.png"> 
+
+            <section class="copyright">
+                 copyright © 2024-2025 <a>Privacy Policy</a> All Rights Served.
+            </section>
 
         </div>
             
     </footer>
+
         
 </body>
 </html>
