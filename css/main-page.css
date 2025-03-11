@@ -321,6 +321,7 @@ main{
 }
 
 .contact-img{
+    /* background-image: url('../../game-hub/images/man2.jpg'); */
     background-image: url('../images/man2.jpg');
     background-size: cover;
     border-radius: 50%;
@@ -328,8 +329,8 @@ main{
     width: 110px;
     border:#000000 2px solid;
     position: absolute;
-    left: 70%;
-    top: 50%;
+    left: 60%;
+    top: 55%;
    
 }
 .contact-us{
@@ -345,10 +346,10 @@ main{
     color:white;
     grid-area: footer;
     display:grid;
-    width: 100%;
+    width: 98%;
     min-height: 150px; 
     font-size: var(--font-size-08rem);
-    padding: 10px;
+    padding: 1%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 2.5fr 0.5fr 1fr 0.5fr;
     grid-template-areas: 'news some '                       
@@ -369,6 +370,7 @@ main{
     
 }
 .sub-mail{
+    /* background-image: url("../../game-hub/icons/Mail.png"); */
     background-image: url("../icons/Mail.png");
     background-repeat: no-repeat;
     background-size: 12px;
@@ -499,7 +501,7 @@ main{
 
     /*contactpage*/
 .contact-page-wrapping{
-    width: 100vw;
+    width: 90vw;
     height: 100px;
     
 }
@@ -534,10 +536,10 @@ main{
 
 .contact-img{
    
-    height: 110px;
-    width: 110px;
-    position: absolute;
-    top: 60%;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: -50%;
     
 }
 .contact-us{
@@ -558,6 +560,7 @@ main{
                             'copy copy';
     }
     .footer-img{
+        /* background-image: url("../../game-hub/images/controller.jpg"); */
         background-image: url("../images/controller.jpg");
         background-repeat: none;
         background-size: cover;
@@ -594,13 +597,19 @@ main{
 }
 
 /*bigger tablet / small desktop*/
-@media (min-width: 1000px){
+@media (min-width: 1000px) {
     header{
         height: 100px;
     }
     .navbar-item{
         
         font-size: var(--font-size-2rem);
+    }
+}
+@media (min-height: 1000px){
+ 
+    .contact-page-info{
+        font-size: var(--font-size-1rem);
     }
 }
 @media (min-width: 1300px){
@@ -628,14 +637,7 @@ main{
 }
 
 
-.contact-img{
-  
-   height: 150px;
-   width: 150px;
-   position: relative;
-   top: 0%;
-   
-}
+
 
 
 
@@ -652,6 +654,7 @@ main{
    padding-left: 400px;
 }
 .footer-img{
+    /* background-image: url("../../game-hub/images/controller.jpg"); */
    background-image: url("../images/controller.jpg");
    background-repeat: none;
    background-size: cover;
@@ -725,7 +728,7 @@ main{
     }
     .contact-page-info{
      
-        width: 80vw;
+        width: 70vw;
         height: 40vh;
         padding: 40px;
     }
