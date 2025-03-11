@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Krub';
-    src: url('../fonts/Krub-Regular.ttf') format('truetype');
+    src: url('./fonts/Krub-Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Kosugi';
-    src: url('../fonts/Kosugi/Kosugi-Regular.ttf') format('truetype');
+    src: url('./fonts/Kosugi/Kosugi-Regular.ttf') format('truetype');
 }
 :root{
     --color-dark-transparent: rgba(0,0,0, 62%);
@@ -201,7 +201,7 @@ main{
 }
 .header2-img{
     grid-area: img;
-    background-image: url('../../images/woman.jpg');
+    background-image: url('../images/woman.jpg');
     background-size: cover;
     background-position-x: center;
 
@@ -235,7 +235,7 @@ main{
 /*Sellingpoint */
 .selling-point-background{
 
-    background-image: url("../../images/controller.jpg");
+    background-image: url("../images/controller.jpg");
     background-size: cover;
     background-position-y: bottom;
     height: 70px;
@@ -321,7 +321,7 @@ main{
 }
 
 .contact-img{
-    background-image: url('../../images/man2.jpg');
+    background-image: url('../images/man2.jpg');
     background-size: cover;
     border-radius: 50%;
     height: 110px;
@@ -369,7 +369,7 @@ main{
     
 }
 .sub-mail{
-    background-image: url("../../icons/Mail.png");
+    background-image: url("../icons/Mail.png");
     background-repeat: no-repeat;
     background-size: 12px;
     background-position-y: 50%;
@@ -558,7 +558,7 @@ main{
                             'copy copy';
     }
     .footer-img{
-        background-image: url("../../images/controller.jpg");
+        background-image: url("../images/controller.jpg");
         background-repeat: none;
         background-size: cover;
         background-position-y: center;
@@ -652,7 +652,7 @@ main{
    padding-left: 400px;
 }
 .footer-img{
-   background-image: url("/images/controller.jpg");
+   background-image: url("../images/controller.jpg");
    background-repeat: none;
    background-size: cover;
    background-position-y: center;
