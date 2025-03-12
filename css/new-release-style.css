@@ -9,6 +9,7 @@
     text-shadow: 0 10px 4px rgba(0, 0, 0, 0.250);
     
 }
+
 .new-rel-slide-wrapper{
     position: relative;
     max-width: 100%;
@@ -125,17 +126,38 @@
     margin-top: 10%; 
 }
 
+.all-games{
+    
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(1, 0.8fr);
+}
+.home-page .new-release-section{
+    margin-top: 15%;
+    
+}
+
 @media (min-width: 750px){
     .new-release-section{
-        margin-top: 25%; 
+        margin-top: 20%; 
     }
-    .single-card{
+    .home-page .new-release-section{
+        margin-top: 25%;
+        
+    }
+    .selling-point-background .single-card{
         min-width: 75vw;
     }
     .new-rel-style{
         font-size: 58px;
         text-align: center; 
     }
+    .head-padding-game-page {
+       position: absolute;
+       top: 5%;
+       left: 25%
+    }
+   
     .new-game-card{
         height: 240px;
     }
@@ -167,17 +189,30 @@
         height: 200px;
 
     }
+   
+  
     
     
 }
 @media (min-width: 1000px ) {
-   
-    .single-card{
+    .home-page .new-release-section{
+        margin-top: 30%;
+        
+    }
+   .new-release-section{
+    margin-top: 15%;
+   }
+    .selling-point-background .single-card{
         min-width: 65vw;
     }
     .new-game-card{
         height: 300px;
     }
+    .head-padding-game-page {
+       
+        top: 7%;
+        left: 30%
+     }
     .add-to-cart-btn{
         background-size: 35px;
         background-position-x: 20px;
@@ -200,20 +235,70 @@
         width: auto;
 
     }
+   .all-games{
+    padding-left: 20%;
+
+   }
+   .all-games .single-card{
+    min-width: 50vw;
+   }
 }
+   
 @media (min-width: 1300px ) {
-    .new-release-section{
-       padding-top: 5%;
+    .home-page .new-release-section{
+        margin-top: 35%;
+        
     }
-    .single-card{
+    .new-release-section{
+        margin-top: 10%;
+    }
+  
+    .new-release-section .single-card{
         min-width: 55vw;
     }
+    .head-padding-game-page {
+        
+        top: 7%;
+        left: 35%
+     }
+    .all-games{
+    
+        display: grid;
+        gap: 2px;
+        grid-template-columns: repeat(2, 0.5fr);
+        padding-left: 0%;
+    }
+    .all-games .single-card{
+        min-width: 35vw;
+    }
+   
+   
 }
 @media (min-width: 2000px ) {
     .new-release-section{
-       padding-top: 7%;
+       margin-top: 10%;
+       
     }
-    .single-card{
+     .home-page .new-release-section{
+        margin-top: 35%;
+        
+    }
+    .new-release-section .single-card{
         min-width: 35vw;
+    }
+    .head-padding-game-page {
+       
+        top: 7%;
+        left: 45%
+     }
+    .all-games{
+   
+        display: grid;
+        gap: 2px;
+        grid-template-columns: repeat(3, 0.5fr);
+        padding-left: 0%;
+    }
+    .all-games .single-card{
+        min-width: 30vw;
     }
 }
