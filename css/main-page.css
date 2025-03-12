@@ -86,7 +86,7 @@ header{
     min-width: 100%;
     height: 65px;
     top: 0px;
-    z-index: 1;
+    z-index: 2;
 
 }
 .game-hub-logo-header{
@@ -170,6 +170,8 @@ main{
     
     min-height: calc(100vh - 200px);
 }
+
+/*HEADER 2 */
 .header2{
     height: 300px;
     display:grid;
@@ -177,21 +179,28 @@ main{
     grid-template-rows: 1fr 3fr;
     grid-template-areas: 'logo img selling'
                             'shop img news';
+ 
 }
 .header2-logo{
     grid-area: logo;
     background-image: linear-gradient( to bottom, #220842 20%, #0597F2 80%);
+    box-shadow: 10px 0px 50px black;
+    z-index: 0;
+    
 }
 .game-hub-logo-header2{
     width: 100px;
     height: auto;
     padding: 25% 10% 25% 10%;
+
 }
 .to-shop{
     grid-area: shop;
     background-color: #220842;
     padding: 25% 15%;
     font-size: 18px;
+    z-index: 1;
+    box-shadow: 10px -10px  50px black;
 
 }
 .to-shop a{
@@ -204,6 +213,8 @@ main{
     background-image: url('../images/woman.jpg');
     background-size: cover;
     background-position-x: center;
+    z-index: -1;
+    
 
 }
 .img{
@@ -215,6 +226,8 @@ main{
     color:white;
     font-size: 0.8rem;
     padding: 15% 5% 0 15%;
+    box-shadow: -10px 10px 50px black;
+    z-index: 1;
 }
 .header2-new-release-text{
     grid-area: news;
@@ -226,6 +239,8 @@ main{
     text-align: center;
     font-size: 14px;
     padding-top: 15%;
+    z-index: 0;
+    box-shadow: -10px -10px  50px black;
     
 }
 
@@ -490,12 +505,14 @@ main{
 
     /*HEADER 2*/
    
-  
+   
     .game-hub-logo-header2{
         width: 200px;
+        
     }
     .to-shop{
         font-size: 2rem;
+        z-index: 1;
     }
   
 
