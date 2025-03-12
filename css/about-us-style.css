@@ -1,0 +1,36 @@
+.about-txt-content{
+    border: 2px solid black;
+    width: 80vw;
+    margin: 5% 10%;
+    text-align: center;
+    background-color: rgb(5, 151, 242, 0.50);
+}
+.about-txt-content h1{
+    text-transform: uppercase;
+}
+.our-employees-wrapping{
+
+}
+.rounded-corners{
+    border-radius: 10px;
+}
+.employee-card{
+    width: 70vw;
+    margin: 5% 10%;
+    text-align: center;
+    padding: 5%
+}
+.emp-img{
+    margin-top: 5%;
+    height: 200px;
+    width: auto;
+}
+.about-section address h2{
+    line-height: 10px;
+}
+
+.about-section address a{
+    color:black;
+    text-decoration: none;
+    
+}

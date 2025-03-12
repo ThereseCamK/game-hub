@@ -272,11 +272,8 @@ main{
 /*contactpage*/
 .contact-page-wrapping{
     width: 100vw;
-
-
-   
-
 }
+
 .some-item{
     height: 30px;
     width: 32px;
@@ -302,7 +299,6 @@ main{
      border-bottom-left-radius: 1px;
      border-top-right-radius: 360px;
      border-bottom-right-radius: 360px;
-  
     font-size: 12px;
     height: 261px;
     margin: 10px;
