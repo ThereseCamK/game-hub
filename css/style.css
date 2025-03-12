@@ -33,7 +33,7 @@
 }
 
 .new-game-card{
-    min-width: 90%;
+   
     height: 173px;
     border-radius: 30px;
     display: grid;
@@ -96,4 +96,25 @@
 .game-added-to-cart{
     font-size: xx-small;
     color:#3FA535;
+}
+.page-slide{
+    text-align: center;
+}
+.circle {
+
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    border: solid 1px black;
+    display: inline-block;
+    margin: 15px 3px;
+    
+}
+.current-game-slide{
+    background-color: #bbb;
+}
+.single-card{
+    min-width: 95vw;
 }
