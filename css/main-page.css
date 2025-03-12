@@ -757,7 +757,7 @@ main{
 
 
 }
-@media (max-height: 800px ) Or (max-width:300px){
+@media (max-height: 900px ) Or (max-width:400px){
     .contact-img{
    
         display: none;
