@@ -122,10 +122,13 @@
     min-width: 95vw;
 }
 .new-release-section{
-    margin-top: 50px; 
+    margin-top: 10%; 
 }
 
 @media (min-width: 750px){
+    .new-release-section{
+        margin-top: 25%; 
+    }
     .single-card{
         min-width: 75vw;
     }
@@ -168,9 +171,7 @@
     
 }
 @media (min-width: 1000px ) {
-    .new-release-section{
-       padding-top: 5%;
-    }
+   
     .single-card{
         min-width: 65vw;
     }
@@ -202,7 +203,7 @@
 }
 @media (min-width: 1300px ) {
     .new-release-section{
-       padding-top: 10%;
+       padding-top: 5%;
     }
     .single-card{
         min-width: 55vw;
@@ -210,7 +211,7 @@
 }
 @media (min-width: 2000px ) {
     .new-release-section{
-       padding-top: 15%;
+       padding-top: 7%;
     }
     .single-card{
         min-width: 35vw;

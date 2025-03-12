@@ -185,7 +185,7 @@ main{
 .game-hub-logo-header2{
     width: 100px;
     height: auto;
-    padding: 20% 10% 0 10%;
+    padding: 25% 10% 25% 10%;
 }
 .to-shop{
     grid-area: shop;
@@ -491,6 +491,26 @@ main{
         
         min-height: calc(100vh - 200px);
     }
+
+    /*HEADER 2*/
+   
+  
+    .game-hub-logo-header2{
+        width: 200px;
+    }
+    .to-shop{
+        font-size: 2rem;
+    }
+  
+
+    .header2-info{
+        font-size: 1.5rem;
+    }
+
+    .header2-new-release-text{
+        font-size: 1rem;
+        padding-top: 25%;   
+    }
     
 
     /*content*/
@@ -612,8 +632,30 @@ main{
         font-size: var(--font-size-1rem);
     }
 }
+
+/*Desktop*/
 @media (min-width: 1300px){
   
+    /*header 2*/
+    .game-hub-logo-header2{
+        width: 300px;
+        padding: 25%
+        
+    }
+    .to-shop{
+        font-size: 2.5rem;
+    }
+  
+
+    .header2-info{
+        font-size: 2rem;
+    }
+
+    .header2-new-release-text{
+        font-size: 1.5rem;
+        padding-top: 15%;   
+    }
+
     /*contactpage*/
 
 .some-item{
