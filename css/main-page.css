@@ -332,7 +332,7 @@ main{
 }
 
 .contact-img{
-    /* background-image: url('../../game-hub/images/man2.jpg'); */
+    
     background-image: url('../images/man2.jpg');
     background-size: cover;
     border-radius: 50%;
@@ -347,6 +347,151 @@ main{
 .contact-us{
     margin-top: 40px;
 }
+
+/*Game page and new release*/
+.new-rel-style{
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #F205CB,#0597F2,#F205CB,#0C098C);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    font-size: 32px;
+    text-align: center;
+    text-shadow: 0 10px 4px rgba(0, 0, 0, 0.250);
+    
+}
+
+.new-rel-slide-wrapper{
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+
+}
+
+.new-rel-slide{
+    display: flex;
+    flex-direction: row;
+    gap:3%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow-x: scroll;
+    overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+}
+.new-rel-slide::-webkit-scrollbar{
+    display: none;
+}
+
+.new-game-card{
+   
+    height: 185px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr ;
+    grid-template-areas: 'card-img card-info ';
+                       
+
+    margin: 10px;
+  
+}
+.new-game-card a{
+    color: black;
+    text-decoration: none;
+}
+.card-text{
+    grid-area: card-info;
+    margin-left: 20px;
+    
+}
+.card-text h3{
+    
+    margin:0;
+    color:#0C098C;
+    float: left;
+    margin-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.card-text p{
+    font-size: 0.8rem;
+    margin-right: 20px;
+}
+.new-game-img{
+    grid-area: card-img;
+    height: 143px;
+    width: auto;
+    margin-left: 20px;
+    margin-top:15px;
+
+}
+.game-title{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+
+.add-to-cart-btn{
+    grid-area: card-btn;
+    background-image: url("../icons/to-cart.png");
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position-y: 50%;
+    background-position-x: 10px;
+    width: 100px;
+    height: 20px;
+    border: #F205CB solid 2px;
+    border-radius: 30px;
+    color:#F205CB;
+    font-size: 0.7rem;
+    text-align: end;
+    margin-top: 20px;
+    margin-bottom: 5px;
+   
+
+    
+}
+.game-added-to-cart{
+    font-size: xx-small;
+    color:#3FA535;
+}
+.page-slide{
+    text-align: center;
+}
+.circle {
+
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    border: solid 1px black;
+    display: inline-block;
+    margin: 15px 3px;
+    
+}
+.current-game-slide{
+    background-color: #bbb;
+}
+.single-card{
+    min-width: 95vw;
+}
+.new-release-section{
+    margin-top: 10%; 
+}
+
+.all-games{
+    
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(1, 0.8fr);
+}
+.home-page .new-release-section{
+    margin-top: 15%;
+    
+}
+
 
 
 /*FOOTER*/
@@ -580,6 +725,58 @@ main{
 
 }
 
+/*game page and new release*/
+.new-release-section{
+    margin-top: 20%; 
+}
+.home-page .new-release-section{
+    margin-top: 25%;
+    
+}
+.selling-point-background .single-card{
+    min-width: 75vw;
+}
+.new-rel-style{
+    font-size: 58px;
+    text-align: center; 
+}
+.head-padding-game-page {
+   position: absolute;
+   top: 5%;
+   left: 25%
+}
+
+.new-game-card{
+    height: 240px;
+}
+
+.add-to-cart-btn{
+    background-size: 25px;
+    width: 160px;
+    height: 40px;
+    color:#F205CB;
+    font-size: var(--font-size-1rem);
+    text-align: end;
+    padding-right: 20px;
+    margin-top: 10px;
+
+}
+.game-title{
+  
+    font-size: 25px;
+}
+.card-text h3{
+    
+    font-size: 1.5rem;
+}
+.card-text p{
+    font-size: 1.2rem;
+
+}
+.new-game-img{
+    height: 200px;
+
+}
 
 
     /* Footer */
@@ -644,6 +841,54 @@ main{
     .contact-page-info{
         font-size: var(--font-size-1rem);
     }
+    /*game page and new release*/
+    .home-page .new-release-section{
+        margin-top: 30%;
+        
+    }
+   .new-release-section{
+    margin-top: 15%;
+   }
+    .selling-point-background .single-card{
+        min-width: 65vw;
+    }
+    .new-game-card{
+        height: 300px;
+    }
+    .head-padding-game-page {
+       
+        top: 7%;
+        left: 30%
+     }
+    .add-to-cart-btn{
+        background-size: 35px;
+        background-position-x: 20px;
+        width: 200px;
+        height: 60px;
+        font-size: 1.3rem;
+    }
+    .game-title{
+        font-size: 30px;
+    }
+    .card-text h3{
+        font-size: var(--font-size-2rem);
+    }
+    .card-text p{
+        font-size: 1.5rem;
+        margin-right: 20px;
+    }
+    .new-game-img{
+        height: 270px;
+        width: auto;
+
+    }
+   .all-games{
+    padding-left: 20%;
+
+   }
+   .all-games .single-card{
+    min-width: 50vw;
+   }
 }
 
 /*Desktop*/
@@ -692,8 +937,33 @@ main{
 }
 
 
+/*game page and new release*/
+.home-page .new-release-section{
+    margin-top: 35%;
+    
+}
+.new-release-section{
+    margin-top: 10%;
+}
 
+.new-release-section .single-card{
+    min-width: 55vw;
+}
+.head-padding-game-page {
+    
+    top: 7%;
+    left: 35%
+ }
+.all-games{
 
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(2, 0.5fr);
+    padding-left: 0%;
+}
+.all-games .single-card{
+    min-width: 35vw;
+}
 
 
 .footer-content{
@@ -756,6 +1026,35 @@ main{
 }
 
 
+}
+@media (min-width: 2000px ) {
+    /*game page and new release*/
+    .new-release-section{
+       margin-top: 10%;
+       
+    }
+     .home-page .new-release-section{
+        margin-top: 35%;
+        
+    }
+    .new-release-section .single-card{
+        min-width: 35vw;
+    }
+    .head-padding-game-page {
+       
+        top: 7%;
+        left: 45%
+     }
+    .all-games{
+   
+        display: grid;
+        gap: 2px;
+        grid-template-columns: repeat(3, 0.5fr);
+        padding-left: 0%;
+    }
+    .all-games .single-card{
+        min-width: 30vw;
+    }
 }
 @media (max-height: 900px ) Or (max-width:400px){
     .contact-img{

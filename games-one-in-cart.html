@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The home page to Game Hub site. where you can buy online games " />
+    <meta name="description" content="Here you can get a view of every game we have, info about it and put it in ypur shoppingcart with one item in cart" />
     <title>GAME HUB</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="./css/main-page.css">
-
+    <link rel="stylesheet" href="./css/single-game-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
@@ -22,71 +22,56 @@
             <span></span>
         </label>
         <nav >
-
-                <a title="Go to homepage" class="navbar-item active " href="./index.html">Home</a>
-                <a title="Go to GameShop page" class="navbar-item" href="./games.html">Games</a>
+             
+                <a title="Go to homepage" class="navbar-item  " href="./index.html">Home</a>
+                <a title="Go to GameShop page" class="navbar-item active" href="./games.html">Games</a>
                 <a title="Go to about us page" class="navbar-item" href="./about.html">About</a>
                 <a title="Go to contact page" class="navbar-item" href="./contact.html">Contact</a>
         </nav >
 
             <a class="logo-position" href="./index.html">
-              
-                <img class="game-hub-logo-header"  src="./images/gameHub_Logo.png" alt="game hub logo"/>
+                               <!-- <img class="game-hub-logo-header"  src="../../game-hub/images/gameHub_Logo.png" alt="game hub logo"/> -->
+                               <img class="game-hub-logo-header"  src="./images/gameHub_Logo.png" alt="game hub logo"/>
             </a> 
 
             <div class="cart-wrapper">
-            
+             <!-- <a class="cart-link" href="../../game-hub/html-pages/cart.html"><img title="go to cart" class="shopping-cart" src="../../game-hub/images/cart-icon.png" alt="shoppingcart"/>  -->
                 <a class="cart-link" href="./cart.html"><img title="go to cart" class="shopping-cart" src="./images/cart-icon.png" alt="shoppingcart"/> 
-                <div class="cart-info empty"> 0 </div>
+                <div class="cart-info"> 1 </div>
             </a>
         </div>
      
     </header>
   
-    <main class="home-page">
-     <section class="header2 ">
-        <div class="header2-logo ">
-          
-            <img class="game-hub-logo-header2" src="./images/gameHub_Logo.png" alt="gamehub logo">
-
-        </div>
-        
-        <div class="to-shop "><a href="./games.html">Shop Games Here! </a></div>
-        <div class="header2-img ">
-            <div class="img" title="woman holding a game controller"></div>
-        </div>
-        <div class="header2-info " title="sellingpoint in a second header"> 
-            <p>Online game store that provides digitial games.</p>
-            <p>At a competivie price.</p>
-        </div>
-        <div class="header2-new-release-text krub-style "> 
-            <h1 title="new releases">new releases!</h1>
-        </div>
-
-
-     </section>
-
-     <section class="new-release-section ">
-        <h1 class="new-rel-style   krub-style">new releases! </h1>
+    <main>
+        <section class="selling-point-background">
+            <div class="selling-point" >
+                <p> Online game store that provides digital games. </p>
+                <p>At a competitive price.</p>
+                <!-- <a href="../../game-hub/html-pages/games.html" title="go to the shopping page"> Shop Games Here! </a> -->
+                
+            </div>
+        </section>
+        <section class="new-release-section">
+            <h1 class="new-rel-style head-padding-game-page  krub-style">new releases! </h1>
         
             <div class="new-rel-slide-wrapper">
                 <div class="new-rel-slide">
                     <div class="single-card">
-                        <div class="new-game-card shadow-style">
-                        
+                        <div class="new-game-card shadow-style" >
+                            <a href="single-game-page-one-in-cart.html" >
                             <img class="new-game-img" src="./images/game-super-duper.jpg" alt="playbox game super duper">
                             <div class="card-text">
                             <h2 class="game-title">super duper</h2>
                             <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea rem accusamus ipsum ab, quas delectus, 
                                 .</p>
-                        
+                            </a>
                             <h3 class="price">29$</h3>
                     
-                            <!-- don't show with no items in cart -->
-                            <!-- <p class="game-added-to-cart">1 added to cart</p> --> 
+                            <p class="in-cart">1 added to cart</p> 
                             <button class="add-to-cart-btn shadow-style">Add To Cart</button>
                             </div>
-                    
+                      
                         
                         </div>
                         <div class="page-slide">
@@ -106,8 +91,7 @@
                             
                             </p>
                         <h3 >29$</h3>
-                        <!-- don't show with no items in cart -->
-                        <!-- <p class="game-added-to-cart">1 added to cart</p> --> 
+                        <p class="in-cart"></p> 
                         <button class="add-to-cart-btn shadow-style">Add To Cart</button>
                         </div>
                     </div>
@@ -129,8 +113,7 @@
                             <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea rem accusamus ipsum ab, quas delectus, 
                                 </p>
                             <h3 >35$</h3>
-                            <!-- don't show with no items in cart -->
-                            <!-- <p class="game-added-to-cart">1 added to cart</p> --> 
+                            <p class="in-cart"></p> 
                             <button class="add-to-cart-btn shadow-style">Add To Cart</button>
                             </div>
                         </div>
@@ -151,8 +134,7 @@
                             <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea rem accusamus ipsum ab, quas delectus, 
                             </p>
                             <h3 >35$</h3>
-                            <!-- don't show with no items in cart -->
-                            <!-- <p class="game-added-to-cart">1 added to cart</p> --> 
+                            <p class="in-cart"></p> 
                             <button class="add-to-cart-btn shadow-style">Add To Cart</button>
                             </div>
                         </div>
@@ -167,7 +149,97 @@
             
                 </div>
             </div>
-     </section>    
+         </section>  
+         
+        <section > 
+            <h2>All games</h2>
+            <div class="all-games">
+                <div class="single-card game-card-grid-cell">
+                    <div class="new-game-card shadow-style">
+                    
+                            <img class="new-game-img" src="./images/game-pingpong.jpg" alt="playbox game ping pong">
+                        <div class="card-text">
+                            <h2 class="game-title">ping pong</h2>
+                            <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea rem accusamus ipsum ab, quas delectus, .</p>
+                        
+                            <h3 class="price">15$</h3>
+                            <p class="in-cart"></p> 
+                            <button class="add-to-cart-btn shadow-style">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-card game-card-grid-cell">
+                    <div class="new-game-card shadow-style">
+                    
+                            <img class="new-game-img" src="./images/game-assassin.jpg" alt="playbox game assassin">
+                        <div class="card-text">
+                            <h2 class="game-title">assassin</h2>
+                            <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea rem accusamus ipsum ab, quas delectus, .</p>
+                        
+                            <h3 class="price">19$</h3>
+                            <p class="in-cart"></p> 
+                            <button class="add-to-cart-btn shadow-style">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-card game-card-grid-cell">
+                    <div class="new-game-card shadow-style">
+                    
+                            <img class="new-game-img" src="./images/game-spacewar.jpg" alt="playbox game space war">
+                        <div class="card-text">
+                            <h2 class="game-title">space war</h2>
+                            <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea rem accusamus ipsum ab, quas delectus, .</p>
+                        
+                            <h3 class="price">15$</h3>
+                            <p class="in-cart"></p> 
+                            <button class="add-to-cart-btn shadow-style">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-card game-card-grid-cell">
+                    <div class="new-game-card shadow-style">
+                    
+                            <img class="new-game-img" src="./images/game-racing.jpg" alt="playbox game racing">
+                        <div class="card-text">
+                            <h2 class="game-title">racing</h2>
+                            <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea rem accusamus ipsum ab, quas delectus, .</p>
+                        
+                            <h3 class="price">19$</h3>
+                            <p class="in-cart"></p> 
+                            <button class="add-to-cart-btn shadow-style">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-card game-card-grid-cell">
+                    <div class="new-game-card shadow-style">
+                    
+                            <img class="new-game-img" src="./images/game-boxer.jpg" alt="playbox game boxer">
+                        <div class="card-text">
+                            <h2 class="game-title">boxer</h2>
+                            <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea rem accusamus ipsum ab, quas delectus, .</p>
+                        
+                            <h3 class="price">15$</h3>
+                            <p class="in-cart"></p> 
+                            <button class="add-to-cart-btn shadow-style">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-card game-card-grid-cell">
+                    <div class="new-game-card shadow-style">
+                    
+                            <img class="new-game-img" src="./images/game-cyberpunk.jpg" alt="playbox game cyberpunk">
+                        <div class="card-text">
+                            <h2 class="game-title">cyberpunk</h2>
+                            <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea rem accusamus ipsum ab, quas delectus, .</p>
+                        
+                            <h3 class="price">15$</h3>
+                            <p class="in-cart"></p> 
+                            <button class="add-to-cart-btn shadow-style">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
     </main>
 
     <footer class="kosugi-style footer-img">
@@ -197,7 +269,6 @@
                 <h2>Follow us</h2>
                     <div class="some-icons-wrap">
                        
-
                         <img title="Go to GameHub on Facebook" class="some-icons-footer " src="./icons/Facebook.png" alt="Facebook icon">
                         <img title="Go to GameHub on Instagram" class="some-icons-footer " src="./icons/Instagram.png" alt="Instagram icon">
                         <img title="Go to GameHub on Youtube" class="some-icons-footer " src="./icons/Youtube.png" alt="Youtube icon">
@@ -212,6 +283,7 @@
                     </div>
             </section>
 
+           
 
             <img class="footer-logo game-hub-logo" src="./images/gameHub_Logo.png"> 
 
@@ -222,7 +294,6 @@
         </div>
             
     </footer>
-
         
 </body>
 </html>

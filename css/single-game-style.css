@@ -1,0 +1,56 @@
+.back-btn{
+   border-radius: 30px; 
+   width: 100px;
+   height: 30px;
+   text-align: center;
+   margin: 5%;
+}
+.back-btn a{
+    text-decoration: none;
+    color:black;
+}
+.add-to-cart-btn a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.single-game-page-section img{
+    height: 250px;
+    width: auto;
+    margin-left: 25%;
+   
+}
+.single-game-page-section h1{
+   text-transform: uppercase;
+   padding-left: 10%;
+    
+ }
+ .single-game-page-section p{
+  
+    padding: 2% 10%;
+     
+  }
+.single-game-page-section h2{
+   color: #0C098C;
+   text-align: right;
+   float: left;
+   padding: 0% 05% 0% 40%;
+   
+}
+.single-game-page-section .add-to-cart-btn{
+    background-size: 25px;
+    background-position-y: 50%;
+    background-position-x: 10px;
+        height: 50px;
+        width:150px;
+        font-size: var(--font-size-1rem);
+ }
+ .in-cart{
+    font-size: 15px;
+    color:green;
+    margin-bottom: -5%;
+    margin-right: 10%;
+    text-align: right;
+    
+    
+ }
