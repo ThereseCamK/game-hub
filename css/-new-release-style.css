@@ -34,7 +34,7 @@
 
 .new-game-card{
    
-    height: 173px;
+    height: 185px;
     border-radius: 30px;
     display: grid;
     grid-template-columns: 1fr 1.5fr ;
@@ -56,6 +56,7 @@
     float: left;
     margin-right: 15px;
     margin-top: 20px;
+    margin-bottom: 5px;
 }
 .card-text p{
     font-size: 0.8rem;
@@ -90,6 +91,8 @@
     font-size: 0.7rem;
     text-align: end;
     margin-top: 20px;
+    margin-bottom: 5px;
+   
 
     
 }
@@ -117,4 +120,99 @@
 }
 .single-card{
     min-width: 95vw;
+}
+.new-release-section{
+    margin-top: 50px; 
+}
+
+@media (min-width: 750px){
+    .single-card{
+        min-width: 75vw;
+    }
+    .new-rel-style{
+        font-size: 58px;
+        text-align: center; 
+    }
+    .new-game-card{
+        height: 240px;
+    }
+    
+    .add-to-cart-btn{
+        background-size: 25px;
+        width: 160px;
+        height: 40px;
+        color:#F205CB;
+        font-size: var(--font-size-1rem);
+        text-align: end;
+        padding-right: 20px;
+        margin-top: 10px;
+
+    }
+    .game-title{
+      
+        font-size: 25px;
+    }
+    .card-text h3{
+        
+        font-size: 1.5rem;
+    }
+    .card-text p{
+        font-size: 1.2rem;
+
+    }
+    .new-game-img{
+        height: 200px;
+
+    }
+    
+    
+}
+@media (min-width: 1000px ) {
+    .new-release-section{
+       padding-top: 5%;
+    }
+    .single-card{
+        min-width: 65vw;
+    }
+    .new-game-card{
+        height: 300px;
+    }
+    .add-to-cart-btn{
+        background-size: 35px;
+        background-position-x: 20px;
+        width: 200px;
+        height: 60px;
+        font-size: 1.3rem;
+    }
+    .game-title{
+        font-size: 30px;
+    }
+    .card-text h3{
+        font-size: var(--font-size-2rem);
+    }
+    .card-text p{
+        font-size: 1.5rem;
+        margin-right: 20px;
+    }
+    .new-game-img{
+        height: 270px;
+        width: auto;
+
+    }
+}
+@media (min-width: 1300px ) {
+    .new-release-section{
+       padding-top: 10%;
+    }
+    .single-card{
+        min-width: 55vw;
+    }
+}
+@media (min-width: 2000px ) {
+    .new-release-section{
+       padding-top: 15%;
+    }
+    .single-card{
+        min-width: 35vw;
+    }
 }
