@@ -5,6 +5,7 @@
    text-align: center;
    margin: 5%;
 }
+
 .back-btn a{
     text-decoration: none;
     color:black;
@@ -46,9 +47,9 @@
         font-size: var(--font-size-1rem);
  }
  .in-cart{
-    font-size: 15px;
+    font-size: 10px;
     color:green;
-    margin-bottom: -5%;
+    margin-bottom: -2%;
     margin-right: 10%;
     text-align: right;
     
@@ -57,4 +58,72 @@
  .add-to-cart-btn a{
     text-decoration: none;
     color:#F205CB;
+ } 
+ @media (min-width: 750px){
+   .single-game-page-section{
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      min-width: 80vw;   
+      min-height: 50vh;
+      margin: 1vh 5vw;   
+      background-color: rgb(0, 0, 0, 0.20); 
+      border-radius: 30px;
+      box-shadow: 5px 5px 10px black;
+      
+   }
+ 
+   .in-cart{
+      color:green;
+      margin-bottom: -2%;
+      margin-right: 10%;
+      text-align: right;
+      
+      
+   }
+   .single-game-page-section .add-to-cart-btn{
+
+      background-position-x: 25px;
+      width:200px;
+      font-size: 1.5rem;
+      float: left;
+      margin-left: 20%;
+   }
+   .single-game-page-section img{
+  
+      height: 350px;
+      width: auto;
+      margin: 10% 35% 0% 15%;
+     
+  }
+  .single-game-page-section h1{
+   
+   text-align: left;
+   padding-left: 20%;
+   
+    
+ }
+ .single-game-page-section p{
+  
+   padding: 2% 20%;
+    
+ }
+.single-game-page-section h2{
+  text-align: left;
+  padding: 0% 70% 0% 20%;
+  
+}
+ }
+ @media (min-width: 1000px){
+   .single-game-page-section{
+      min-width: 70vw;   
+      margin: 1vh 15vw;   
+
+   }
+
+   .in-cart{
+      font-size: 1.2rem; 
+   }
+ 
+
+   
  }

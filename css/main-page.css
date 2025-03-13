@@ -414,10 +414,10 @@ main{
     margin-top: 20px;
     margin-bottom: 5px;
 }
-.card-text p{
+/* .card-text p{
     font-size: 0.8rem;
     margin-right: 20px;
-}
+} */
 .new-game-img{
     grid-area: card-img;
     height: 143px;
@@ -446,7 +446,7 @@ main{
     color:#F205CB;
     font-size: 0.7rem;
     text-align: end;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 5px;
    
 
@@ -733,6 +733,12 @@ main{
     margin-top: 25%;
     
 }
+.new-release-section p{
+    font-size: 1.5rem;
+}
+.new-release-section .in-cart{
+    font-size: 1rem;
+}
 .selling-point-background .single-card{
     min-width: 75vw;
 }
@@ -750,7 +756,8 @@ main{
     height: 240px;
 }
 
-.add-to-cart-btn{
+
+.new-release-section .add-to-cart-btn{
     background-size: 25px;
     width: 160px;
     height: 40px;
@@ -758,9 +765,18 @@ main{
     font-size: var(--font-size-1rem);
     text-align: end;
     padding-right: 20px;
-    margin-top: 10px;
+    /* margin-top: 35px; */
 
 }
+.all-games .add-to-cart-btn{
+    background-size: 15px;
+    width: 150px;
+    height: 30px;
+    font-size: var(--font-size-08rem);
+    text-align: center;
+    margin-top: 25px;
+}
+
 .game-title{
   
     font-size: 25px;
@@ -769,10 +785,7 @@ main{
     
     font-size: 1.5rem;
 }
-.card-text p{
-    font-size: 1.2rem;
 
-}
 .new-game-img{
     height: 200px;
 
@@ -874,9 +887,10 @@ main{
         font-size: var(--font-size-2rem);
     }
     .card-text p{
-        font-size: 1.5rem;
+       
         margin-right: 20px;
     }
+ 
     .new-game-img{
         height: 270px;
         width: auto;
