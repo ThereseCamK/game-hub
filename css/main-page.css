@@ -17,16 +17,16 @@
     --font-size-1rem: 1rem;
     --font-size-2rem: 2rem;
     --linear-gradient-to-right: linear-gradient( to right, #0C098C 37%, #0597F2 69%);
-    
+
 }
 .kosugi-style{
     font-family: var(--kosugi-font);
-   
+
 }
 
 .krub-style{
     font-family: var(--krub-font);
-    
+
 }
 .shadow-style{
     box-shadow: 5px 5px 10px black;
@@ -39,14 +39,14 @@
     width: 25px;
 }
 .buttons-style{
-    
+
     background-color: rgba(5, 151, 242, 0.9);
     font-size: var(--font-size-08rem)
 }
 .game-hub-logo{
     height: 48px;
     width: 79px;
-   
+
 }
 
 body{
@@ -56,17 +56,17 @@ body{
 
 }
 .main-container{
-   
+
     height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr auto 2fr;
     grid-template-rows: 1fr 3fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
     'header header header'
     'main main main'
     'footer footer footer';
-    
+
 }
 /*HEAD*/
 nav,
@@ -125,7 +125,7 @@ nav {
     width: 35px;
     height: 2px;
     margin: 5px 10px;
-    background-color: #ffffff;       
+    background-color: #ffffff;
 }
 .hamburger-icon{
     margin: 10px;
@@ -167,7 +167,7 @@ font-weight: bolder;
 /*MAIN*/
 main{
     grid-area: main;
-    
+
     min-height: calc(100vh - 200px);
 }
 
@@ -179,14 +179,14 @@ main{
     grid-template-rows: 1fr 3fr;
     grid-template-areas: 'logo img selling'
                             'shop img news';
- 
+
 }
 .header2-logo{
     grid-area: logo;
     background-image: linear-gradient( to bottom, #220842 20%, #0597F2 80%);
     box-shadow: 10px 0px 50px black;
     z-index: 0;
-    
+
 }
 .game-hub-logo-header2{
     width: 100px;
@@ -206,7 +206,7 @@ main{
 .to-shop a{
     color:#F205CB;
     text-decoration: underline;
-    
+
 }
 .header2-img{
     grid-area: img;
@@ -214,7 +214,7 @@ main{
     background-size: cover;
     background-position-x: center;
     z-index: -1;
-    
+
 
 }
 .img{
@@ -241,7 +241,7 @@ main{
     padding-top: 15%;
     z-index: 0;
     box-shadow: -10px -10px  50px black;
-    
+
 }
 
 
@@ -263,10 +263,10 @@ main{
     background-color: rgba(0, 0, 0, 0.685);
     color:white;
     font-size: 14px;
-    position: absolute; 
+    position: absolute;
     width: 100%;
     height: 135px;
-    top: 65px; 
+    top: 65px;
     z-index: 0;
 
 }
@@ -279,8 +279,8 @@ main{
     position: relative;
     right: -40%;
     bottom: 15px;
-    
-    
+
+
 }
 
 
@@ -328,11 +328,11 @@ main{
 }
 .address p{
     line-height: 3px;
-    
+
 }
 
 .contact-img{
-    
+
     background-image: url('../images/man2.jpg');
     background-size: cover;
     border-radius: 50%;
@@ -342,7 +342,7 @@ main{
     position: absolute;
     left: 60%;
     top: 55%;
-   
+
 }
 .contact-us{
     margin-top: 40px;
@@ -358,7 +358,7 @@ main{
     font-size: 32px;
     text-align: center;
     text-shadow: 0 10px 4px rgba(0, 0, 0, 0.250);
-    
+
 }
 
 .new-rel-slide-wrapper{
@@ -385,16 +385,16 @@ main{
 }
 
 .new-game-card{
-   
-    height: 185px;
+
+    max-height: 30vh;
     border-radius: 30px;
     display: grid;
     grid-template-columns: 1fr 1.5fr ;
     grid-template-areas: 'card-img card-info ';
-                       
+    font-size: 0.8rem;
 
     margin: 10px;
-  
+
 }
 .new-game-card a{
     color: black;
@@ -403,10 +403,10 @@ main{
 .card-text{
     grid-area: card-info;
     margin-left: 20px;
-    
+
 }
 .card-text h3{
-    
+
     margin:0;
     color:#0C098C;
     float: left;
@@ -432,6 +432,7 @@ main{
 }
 
 
+
 .add-to-cart-btn{
     grid-area: card-btn;
     background-image: url("../icons/to-cart.png");
@@ -446,16 +447,13 @@ main{
     color:#F205CB;
     font-size: 0.7rem;
     text-align: end;
-    margin-top: 5px;
+    margin-top: -15px;
     margin-bottom: 5px;
-   
 
-    
+
+
 }
-.game-added-to-cart{
-    font-size: xx-small;
-    color:#3FA535;
-}
+
 .page-slide{
     text-align: center;
 }
@@ -469,7 +467,7 @@ main{
     border: solid 1px black;
     display: inline-block;
     margin: 15px 3px;
-    
+
 }
 .current-game-slide{
     background-color: #bbb;
@@ -478,18 +476,18 @@ main{
     min-width: 95vw;
 }
 .new-release-section{
-    margin-top: 10%; 
+    margin-top: 10%;
 }
 
 .all-games{
-    
+
     display: grid;
     gap: 2px;
     grid-template-columns: repeat(1, 0.8fr);
 }
 .home-page .new-release-section{
     margin-top: 15%;
-    
+
 }
 
 
@@ -503,27 +501,27 @@ main{
     grid-area: footer;
     display:grid;
     width: 98%;
-    min-height: 150px; 
+    min-height: 150px;
     font-size: var(--font-size-08rem);
     padding: 1%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 2.5fr 0.5fr 1fr 0.5fr;
-    grid-template-areas: 'news some '                       
+    grid-template-areas: 'news some '
                          'sub sub '
                          'logo logo'
                         'copy copy';
 }
 .subscibe-news{
-    grid-area: news;  
-    line-height: var(--line-spacing); 
+    grid-area: news;
+    line-height: var(--line-spacing);
     font-size: 50px;
-    
+
 }
 
 
 .subscribe-input{
     grid-area: sub;
-    
+
 }
 .sub-mail{
     /* background-image: url("../../game-hub/icons/Mail.png"); */
@@ -545,12 +543,12 @@ main{
 .footer-logo{
     grid-area: logo;
     padding-top: 15px;
-   
+
 
 }
 .footer-contact{
-    
-    align-self: start; 
+
+    align-self: start;
     line-height: var(--line-spacing);
     font-size: 0.7rem;
 }
@@ -561,7 +559,7 @@ main{
     padding-top: 5%;
     display: flex;
     flex-direction: column;
-  
+
 
 }
 .some-icons-wrapper{
@@ -569,14 +567,14 @@ main{
     flex-direction: column;
 }
 .some-icons-footer{
-    height: 35px; 
+    height: 35px;
     width: 38px;
 }
 
 .copyright{
     grid-area: copy;
     font-size: 0.5rem;
-    
+
     align-self: flex-end;
     text-align: center;
     padding: 3% 10%;
@@ -591,9 +589,9 @@ main{
     }
     header{
         height: 70px;
-        
+
     }
-  
+
     .game-hub-logo-header{
         height: 72px;
         width: auto;
@@ -604,13 +602,13 @@ main{
     #menu-checkbox{
         display: none;
     }
-    
+
 
     nav{
         display: block;
         position: static;
         background-color: inherit;
-        
+
     }
 
     .navbar-item{
@@ -625,15 +623,15 @@ main{
     .shopping-cart{
         height: 45px;
         width: 45px;
-       
+
     }
     .cart-wrapper{
-       
-      
+
+
         top: 25px;
     }
     .cart-info{
-       
+
         width: 25px;
         height: 25px;
         font-size: 1.5rem;
@@ -643,23 +641,23 @@ main{
     }
 
     main{
-      
-        
+
+
         min-height: calc(100vh - 200px);
     }
 
     /*HEADER 2*/
-   
-   
+
+
     .game-hub-logo-header2{
         width: 200px;
-        
+
     }
     .to-shop{
         font-size: 2rem;
         z-index: 1;
     }
-  
+
 
     .header2-info{
         font-size: 1.5rem;
@@ -667,9 +665,9 @@ main{
 
     .header2-new-release-text{
         font-size: 1rem;
-        padding-top: 25%;   
+        padding-top: 25%;
     }
-    
+
 
     /*content*/
     .selling-point-background{
@@ -681,16 +679,16 @@ main{
 .contact-page-wrapping{
     width: 90vw;
     height: 100px;
-    
+
 }
 .some-item{
- 
+
     width: 36px;
     margin-right: 100px;
-   
+
 }
 .some-icons{
-   height: 60px; 
+   height: 60px;
    width: 70px;
 }
 
@@ -698,8 +696,8 @@ main{
     font-size: 25px;
 }
 .contact-page-info{
-    
-    
+
+
     width: 80vw;
     height: 40vh;
     padding: 40px;
@@ -709,16 +707,16 @@ main{
 }
 .address p{
     line-height: 15px;
-    
+
 }
 
 .contact-img{
-   
+
     height: 150px;
     width: 150px;
     position: relative;
     top: -50%;
-    
+
 }
 .contact-us{
     margin-top: 30px;
@@ -727,11 +725,11 @@ main{
 
 /*game page and new release*/
 .new-release-section{
-    margin-top: 20%; 
+    margin-top: 20%;
 }
 .home-page .new-release-section{
     margin-top: 25%;
-    
+
 }
 .new-release-section p{
     font-size: 1.5rem;
@@ -744,7 +742,7 @@ main{
 }
 .new-rel-style{
     font-size: 58px;
-    text-align: center; 
+    text-align: center;
 }
 .head-padding-game-page {
    position: absolute;
@@ -760,12 +758,12 @@ main{
 .new-release-section .add-to-cart-btn{
     background-size: 25px;
     width: 160px;
-    height: 40px;
+    height: 35px;
     color:#F205CB;
     font-size: var(--font-size-1rem);
     text-align: end;
     padding-right: 20px;
-    /* margin-top: 35px; */
+     margin-top: -5px;
 
 }
 .all-games .add-to-cart-btn{
@@ -778,11 +776,11 @@ main{
 }
 
 .game-title{
-  
+
     font-size: 25px;
 }
 .card-text h3{
-    
+
     font-size: 1.5rem;
 }
 
@@ -797,7 +795,7 @@ main{
         font-size: var(--font-size-1rem);
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 0.3fr 0.5fr 0.1fr 0.2fr;
-        grid-template-areas: 'news some '                       
+        grid-template-areas: 'news some '
                              'sub some '
                              'logo logo'
                             'copy copy';
@@ -818,12 +816,12 @@ main{
         font-size: 0.8rem;
     }
     .sub-mail{
-   
+
         background-size: 20px;
         background-position-x: 10px;
         font-size: var(--font-size-1rem);
         height: 30px;
-      
+
     }
     .sub-btn{
         height: 36px;
@@ -834,9 +832,9 @@ main{
         align-self: flex-end;
         text-align: end;
         padding: 3% 10%;
-        
+
     }
-   
+
 }
 
 /*bigger tablet / small desktop*/
@@ -845,19 +843,19 @@ main{
         height: 100px;
     }
     .navbar-item{
-        
+
         font-size: var(--font-size-2rem);
     }
 }
 @media (min-height: 1000px){
- 
+
     .contact-page-info{
         font-size: var(--font-size-1rem);
     }
     /*game page and new release*/
     .home-page .new-release-section{
         margin-top: 30%;
-        
+
     }
    .new-release-section{
     margin-top: 15%;
@@ -869,7 +867,7 @@ main{
         height: 300px;
     }
     .head-padding-game-page {
-       
+
         top: 7%;
         left: 30%
      }
@@ -887,10 +885,10 @@ main{
         font-size: var(--font-size-2rem);
     }
     .card-text p{
-       
+
         margin-right: 20px;
     }
- 
+
     .new-game-img{
         height: 270px;
         width: auto;
@@ -907,17 +905,17 @@ main{
 
 /*Desktop*/
 @media (min-width: 1300px){
-  
+
     /*header 2*/
     .game-hub-logo-header2{
         width: 300px;
         padding: 25%
-        
+
     }
     .to-shop{
         font-size: 2.5rem;
     }
-  
+
 
     .header2-info{
         font-size: 2rem;
@@ -925,7 +923,7 @@ main{
 
     .header2-new-release-text{
         font-size: 1.5rem;
-        padding-top: 15%;   
+        padding-top: 15%;
     }
 
     /*contactpage*/
@@ -934,7 +932,7 @@ main{
 
    width: 36px;
    margin-right: 150px;
-  
+
 }
 
 
@@ -942,7 +940,7 @@ main{
    font-size: 35px;
 }
 .contact-page-info{
-   
+
    width: 50vw;
    height: 45vh;
    padding: 40px;
@@ -954,7 +952,7 @@ main{
 /*game page and new release*/
 .home-page .new-release-section{
     margin-top: 35%;
-    
+
 }
 .new-release-section{
     margin-top: 10%;
@@ -964,7 +962,7 @@ main{
     min-width: 55vw;
 }
 .head-padding-game-page {
-    
+
     top: 7%;
     left: 35%
  }
@@ -984,7 +982,7 @@ main{
    font-size: 1.5rem;
    grid-template-columns: 2fr 2fr;
    grid-template-rows: 0.3fr 0.5fr 0.1fr 0.2fr;
-   grid-template-areas: 'news some '                       
+   grid-template-areas: 'news some '
                         'sub some '
                         'logo logo'
                        'copy copy';
@@ -1006,7 +1004,7 @@ main{
    padding-top: 15px;
    height: 100px;
    width: auto;
-  
+
 
 }
 .some-icons-footer{
@@ -1014,7 +1012,7 @@ main{
    width: 35px;
 }
 .footer-contact{
- 
+
    line-height: var(--line-spacing-desktop);
    font-size: var(--font-size-1rem);
 }
@@ -1024,7 +1022,7 @@ main{
    background-position-x: 10px;
    font-size: 1.5rem;
    height: 50px;
- 
+
 }
 .sub-btn{
    font-size: 1.5rem;
@@ -1036,7 +1034,7 @@ main{
    align-self: flex-end;
    text-align: center;
    padding: 0;
-   
+
 }
 
 
@@ -1045,22 +1043,22 @@ main{
     /*game page and new release*/
     .new-release-section{
        margin-top: 10%;
-       
+
     }
      .home-page .new-release-section{
         margin-top: 35%;
-        
+
     }
     .new-release-section .single-card{
         min-width: 35vw;
     }
     .head-padding-game-page {
-       
+
         top: 7%;
         left: 45%
      }
     .all-games{
-   
+
         display: grid;
         gap: 2px;
         grid-template-columns: repeat(3, 0.5fr);
@@ -1072,30 +1070,30 @@ main{
 }
 @media (max-height: 900px ) Or (max-width:400px){
     .contact-img{
-   
+
         display: none;
         position: relative;
         margin-right: 0px;
         top: -50px;
     }
     .some-item{
-     
+
         width: 36px;
-     
-       
-       
+
+
+
     }
     .some-icons{
-        height: 30px; 
+        height: 30px;
         width: 40px;
      }
-       
-    
+
+
     .contact-page-wrapping h1{
         font-size: 25px;
     }
     .contact-page-info{
-     
+
         width: 70vw;
         height: 40vh;
         padding: 40px;
@@ -1105,26 +1103,33 @@ main{
     }
     .address p{
         line-height: 10px;
-        
+
     }
-    
+
     .contact-img{
-       
+
         height: 110px;
         width: 110px;
         position: absolute;
         top: 60%;
-        
+
     }
     .contact-us{
         margin-top: 20px;
-    
+
     }
 
 }
 
 @media(max-width: 400px){
+    .new-game-card{
+        min-height: 150px;
+    }
 .card-text p{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
+.new-game-img{
+    height: 100px;
+}
+
 }
