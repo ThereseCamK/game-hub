@@ -411,7 +411,7 @@ main{
     color:#0C098C;
     float: left;
     margin-right: 15px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 5px;
 }
 /* .card-text p{
@@ -1121,4 +1121,10 @@ main{
     
     }
 
+}
+
+@media(max-width: 400px){
+.card-text p{
+    font-size: 0.7rem;
+}
 }
