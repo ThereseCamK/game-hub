@@ -398,7 +398,7 @@ main{
 
 .new-game-card{
 
-    max-height: 30vh;
+    max-height: 35vh;
     border-radius: 30px;
     display: grid;
     grid-template-columns: 1fr 1.5fr ;

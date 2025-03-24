@@ -25,6 +25,7 @@ hr{
     font-weight: bolder;
     text-align: left;
 }
+
 .cart-info-line{
    clear: left;
 }
@@ -44,10 +45,11 @@ hr{
    
 }
 .product-info{
-    padding: 5%;
+    padding: 5% 5% 0% 5%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
+
 .product-info img{
     width: 38px;
     height: auto;
@@ -66,11 +68,19 @@ hr{
     text-align: right;
 }
 .change-qty{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 20px;
+    margin-inline-end: 0px;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1.5fr;
     border: solid black 2px;
-    border-radius: 10%;
-    width: 50px;
+    border-radius: 30px;
+    width: 70px;
     height: 20px;
-    margin: 15% 10%;
+    
+    text-align: center;
 }
 .add{
     border-right: solid 1px black;
@@ -78,15 +88,15 @@ hr{
 }
 .remove{
     border-left: solid black 1px;
-    padding: 5%;
-    text-align: right;
+   
+  
 }
 .total{
-    width: 30vw;
-    font-size: 0.7rem;
+    width: 40vw;
+    font-size: 0.6rem;
     position: relative;
-    top: 10%;
-    left: 60%;
+    top: 50px;
+    left: 50%;
 }
 .total-info-line{
     display: grid;
@@ -127,6 +137,42 @@ hr{
     color:white;
 }
     
+@media (min-width:750px){
+    .product-info-headers{
+        padding-left: 10%;
+    }
+    .cart{
+        padding: 0% 5% ;
+    }
+    .total{
+        width: 35vw;
+        font-size: 0.8rem;
+        position: relative;
+      
+        left: 50%;
+    }
+    .product-name{
+        font-size: 0.8rem;
+    }
+    .product-info img{
+        width: 52px;
+        height: auto;
+    
+    }
+    .change-qty{
+      
+        width: 100px;
+        text-align: center;
+        
+    }
+   
+}
+@media (min-width:1300px){
+
+    .cart{
+        padding-left: 0% 10% ;
+    }
+}
 
     
     
