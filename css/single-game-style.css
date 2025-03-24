@@ -1,15 +1,4 @@
-.back-btn{
-   border-radius: 30px; 
-   width: 100px;
-   height: 30px;
-   text-align: center;
-   margin: 5%;
-}
 
-.back-btn a{
-    text-decoration: none;
-    color:black;
-}
 .add-to-cart-btn a{
     text-decoration: none;
     color: inherit;
@@ -74,7 +63,7 @@
  
    .in-cart{
       color:green;
-      margin-bottom: -2%;
+      margin-bottom: 2%;
       margin-right: 10%;
       text-align: right;
       

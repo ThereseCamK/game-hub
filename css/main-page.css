@@ -48,6 +48,18 @@
     width: 79px;
 
 }
+.back-btn{
+    border-radius: 30px; 
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin: 5%;
+ }
+ 
+ .back-btn a{
+     text-decoration: none;
+     color:black;
+ }
 
 body{
     margin:0;
