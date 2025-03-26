@@ -2,12 +2,12 @@
     text-decoration: none;
     color:black;
 }
-.cart h1{
+/* .cart h1{
     text-align: center;
     color: #0597F2;
     text-shadow: 0 4px 4px rgb(0, 0, 0,0.25);
 
-}
+} */
 hr{
     margin:  0 5%;
 }
@@ -19,8 +19,16 @@ hr{
     box-shadow: 0 4px 4px rgb(0, 0, 0,0.25);
     
 }
+.blue{
+    text-align: center;
+    color: #0597F2;
+   
+}
+.txt-shaddow{
+    text-shadow: 0 4px 4px rgb(0, 0, 0,0.25);
+}
 
-.cart li{
+li{
     list-style-type: none;
     font-weight: bolder;
     text-align: left;
@@ -136,6 +144,36 @@ hr{
     background-color: #92B0C3;
     color:white;
 }
+
+/*Shipping*/
+
+ li{
+    font-size: 1rem;
+    display: inline;
+    /* margin-inline: 2vw; */
+    
+
+}
+
+/*Confirm*/
+.confirm-circle{
+    border: 3px solid #0A5506;
+    border-radius: 50%;
+    width: 98px;
+    height: 98px;
+    position: relative;
+    top: 30px;
+    left: 35%;
+    margin-bottom: 100px;
+    
+}
+.check-mark{
+    color: #0A5506;
+    font-size: 3rem;
+    text-align: center;
+    padding: 15%;
+}
+
     
 @media (min-width:750px){
     .product-info-headers{

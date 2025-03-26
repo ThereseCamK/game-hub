@@ -23,7 +23,7 @@
         </label>
         <nav >
 
-                <a title="Go to homepage" class="navbar-item active " href="./indext.html">Home</a>
+                <a title="Go to homepage" class="navbar-item active " href="./index.html">Home</a>
                 <a title="Go to GameShop page" class="navbar-item" href="./games.html">Games</a>
                 <a title="Go to about us page" class="navbar-item" href="./about.html">About</a>
                 <a title="Go to contact page" class="navbar-item" href="./contact.html">Contact</a>
@@ -36,69 +36,67 @@
 
             <div class="cart-wrapper">
             
-                <a class="cart-link" ><img title="go to cart" class="shopping-cart" src="./images/cart-icon.png" alt="shoppingcart"/> 
-                <div class="cart-info empty"> 0 </div>
+                <a class="cart-link" href="./cart-empty.html"><img title="go to cart" class="shopping-cart" src="./images/cart-icon.png" alt="shoppingcart"/> 
+                <div class="cart-info empty "> 0 </div>
             </a>
         </div>
      
     </header>
   
     <main class="kosugi-style" >
-        <section class="cart "> 
-            <button href="./games.html" class="back-btn shadow-style" title="go back to the shop"><a href="./games.html">&#x2190; Back</a> </button>
-            <h1 class="blue txt-shaddow">Your Cart</h1> 
-            <hr class="blue-cart-line">   
-
-                <ul class="product-info-headers">
-                    <li>Item</li>
-                    <li>Price</li>
-                    <li>Quantity</li>
-                    <li>Total</li>
+        <section class="payment "> 
+                <ul class=" txt-shaddow  ">
+                    <li >Shipping </li>
+                    <li >Payment </li>
+                    <li class="blue ">Confirm </li>
+                    
                    
                 </ul>
-          
-                <hr class="cart-info-line">
+                <hr class="blue-cart-line">   
+
 
 
             <div class="cart-container">
-                <div >
-                 <h2 class="no-items">NO ITEMS</h2>
-                    
-                    
-
+                <div class="confirm-circle">
+                    <div class="check-mark">✔</div>
                 </div>
+          <p> Thank you for your purchase!</p>
+          <p> Your order #01010101</p>
+          <button  class="co-btn shadow-style"> <a href="games.html">Continue Shopping</a></button>
+                    
+                
+
 
                 <div class="total">
-                    <div class="total-info-line">
-                        <p>Items:</p>
-                        <p  class="price-check-out">0</p>
-                    </div>
-                    <hr>
+                    <h3>Order Summary</h3>
+
                     <div class="total-info-line">
                         <p>Subtotal: </p>
-                        <p  class="price-check-out"> 0$</p>
+                        <p  class="price-check-out"> 29.5$</p>
                     </div>
                     <div class="total-info-line">
-                        <p>Sales Tax: </p>
-                        <p  class="price-check-out"> 0$</p>
+                        <p>Shipping: </p>
+                        <p  class="price-check-out"> 5$</p>
                     </div>
-                    <hr>
+                    
                     <div class="total-info-line grand-total">
-                        <p>Grand total: </p>
-                        <p class="price-check-out"> $</p>
+                        <p>Total: </p>
+                        <p class="price-check-out"> 30.5$</p>
                     </div>
-                    <hr class="thicker-line">
-    
-                    <button  class="co-btn shadow-style  empty-cart" > Check out</button>
+               
+                   
                  
                  
                 </div>
+
+
+             
             </div>
 
 
         </section>
 
-      
+     
     </main>
 
     <footer class="kosugi-style footer-img">

@@ -44,70 +44,127 @@
     </header>
   
     <main class="kosugi-style" >
-        <section class="cart "> 
-            <button href="./games-one-in-cart.html" class="back-btn shadow-style" title="go back to the shop"><a href="./games-one-in-cart.html">&#x2190; Back</a> </button>
-            <h1 class="blue txt-shaddow">Your Cart</h1> 
-            <hr class="blue-cart-line">   
-
-                <ul class="product-info-headers">
-                    <li>Item</li>
-                    <li>Price</li>
-                    <li>Quantity</li>
-                    <li>Total</li>
+        <section class="shipping "> 
+            <button href="./games-one-in-cart.html" class="back-btn shadow-style" title="go back to the shop"><a href="./cart-with-one-item.html">&#x2190; Back</a> </button>
+           
+         
+                <ul class=" txt-shaddow  ">
+                    <li class="blue ">Shipping </li>
+                    <li>Payment </li>
+                    <li>Confirm </li>
+                    
                    
                 </ul>
-          
-                <hr class="cart-info-line">
+                <hr class="blue-cart-line">   
+
 
 
             <div class="cart-container">
-                <div class="product-info">
-                    <div>
-                        <img src="images/game-super-duper.jpg">
-                        <p class="product-name">Super Duper</p>
-                    </div>
-                  <div>
-                    <p class="price-one-product">29$</p>
-                  </div>
-                    
-                    <div class="change-qty">
-                        <a href="cart-with-two-items.html" class="add">+</a>
-                            1
-                        <a href="cart-empty.html" class="remove">-</a>
-                    </div>
-                    <div>
-                        <p  class="price-total-product">29$</p>
-                    </div>
-                    
-                    
-
+                <div>
+                    <h2> shipping adress</h2>
+                    <div class="hint-shipping">?</div>
                 </div>
+                <div>
+                    <label for="firstname"></label>
+                    <input 
+                    type="text" 
+                    name="firstname" 
+                    id="firstname" 
+                    placeholder="First Name"
+                    title="Enter your firstname here"
+                    class="shadow-style radius-style" required>
+                    <label for="lastname"></label>
+                    <input 
+                    type="text" 
+                    name="lastname" 
+                    id="lastname" 
+                    placeholder="Last Name"
+                    title="Enter your lastname here"
+                    class="shadow-style radius-style" required>
+                </div>
+                <div>
+                    <label for="streetaddress"></label>
+                    <input 
+                    type="address" 
+                    name="streetaddress" 
+                    id="streetadress" 
+                    placeholder="Street Address"
+                    title="Enter your Street Address here"
+                    class="shadow-style radius-style" >
+
+                    <label for="apt"></label>
+                    <input 
+                    type="text" 
+                    name="apt" 
+                    id="apt" 
+                    placeholder="Apt / Suite / Unit (Optional)"
+                    title="Enter your apartment, Suite or unit her (optional)"
+                    class="shadow-style radius-style" >
+                </div>
+                <div>
+                    <label for="city"></label>
+                    <input 
+                    type="text" 
+                    name="city" 
+                    id="city" 
+                    placeholder="City "
+                    title="Enter city here"
+                    class="shadow-style radius-style" required >
+
+                    <label for="province"></label>
+                    <input 
+                    type="text" 
+                    name="province" 
+                    id="province" 
+                    placeholder="Province"
+                    title="Enter province here"
+                    class="shadow-style radius-style" required>
+
+                    <label for="postal-code"></label>
+                    <input 
+                    type="number" 
+                    name="postal-code" 
+                    id="postal-code" 
+                    placeholder="Postal Code "
+                    title="Enter postal code here"
+                    class="shadow-style radius-style" required >
+
+                    <label for="number"></label>
+                    <input 
+                    type="number" 
+                    name="number" 
+                    id="number" 
+                    placeholder="number"
+                    title="Phone Number"
+                    class="shadow-style radius-style" >
+                </div>
+
 
                 <div class="total">
-                    <div class="total-info-line">
-                        <p>Items:</p>
-                        <p  class="price-check-out">1</p>
-                    </div>
-                    <hr>
+                    <h3>Order Summary</h3>
+
                     <div class="total-info-line">
                         <p>Subtotal: </p>
-                        <p  class="price-check-out"> 29$</p>
+                        <p  class="price-check-out"> 29.5$</p>
                     </div>
                     <div class="total-info-line">
-                        <p>Sales Tax: </p>
-                        <p  class="price-check-out"> 0.5$</p>
+                        <p>Shipping: </p>
+                        <p  class="price-check-out"> 5$</p>
                     </div>
-                    <hr>
+                    
                     <div class="total-info-line grand-total">
-                        <p>Grand total: </p>
-                        <p class="price-check-out"> 29.5$</p>
+                        <p>Total: </p>
+                        <p class="price-check-out"> 30.5$</p>
                     </div>
-                    <hr class="thicker-line">
-    
-                    <button  class="co-btn shadow-style" > <a href="shipping.html">Check out</a></button>
+                    
+                    <p>Need to fill out forms</p>
+                    <button  class="co-btn shadow-style"  disabled> <a href="payment.html">Continue</a></button>
                  
                  
                 </div>
+
+
+             
             </div>
 
 

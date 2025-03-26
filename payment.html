@@ -23,82 +23,119 @@
         </label>
         <nav >
 
-                <a title="Go to homepage" class="navbar-item active " href="./indext.html">Home</a>
-                <a title="Go to GameShop page" class="navbar-item" href="./games.html">Games</a>
-                <a title="Go to about us page" class="navbar-item" href="./about.html">About</a>
-                <a title="Go to contact page" class="navbar-item" href="./contact.html">Contact</a>
+                <a title="Go to homepage" class="navbar-item active " href="./index-one-in-cart.html">Home</a>
+                <a title="Go to GameShop page" class="navbar-item" href="./games-one-in-cart.html">Games</a>
+                <a title="Go to about us page" class="navbar-item" href="./about-one-in-cart.html">About</a>
+                <a title="Go to contact page" class="navbar-item" href="./contact-one-in-cart.html">Contact</a>
         </nav >
 
-            <a class="logo-position" href="./index.html">
+            <a class="logo-position" href="./index-one-in-cart.html">
               
                 <img class="game-hub-logo-header"  src="./images/gameHub_Logo.png" alt="game hub logo"/>
             </a> 
 
             <div class="cart-wrapper">
             
-                <a class="cart-link" ><img title="go to cart" class="shopping-cart" src="./images/cart-icon.png" alt="shoppingcart"/> 
-                <div class="cart-info empty"> 0 </div>
+                <a class="cart-link" href="./cart-with-one item.html"><img title="go to cart" class="shopping-cart" src="./images/cart-icon.png" alt="shoppingcart"/> 
+                <div class="cart-info "> 1 </div>
             </a>
         </div>
      
     </header>
   
     <main class="kosugi-style" >
-        <section class="cart "> 
-            <button href="./games.html" class="back-btn shadow-style" title="go back to the shop"><a href="./games.html">&#x2190; Back</a> </button>
-            <h1 class="blue txt-shaddow">Your Cart</h1> 
-            <hr class="blue-cart-line">   
-
-                <ul class="product-info-headers">
-                    <li>Item</li>
-                    <li>Price</li>
-                    <li>Quantity</li>
-                    <li>Total</li>
+        <section class="payment "> 
+            <button  class="back-btn shadow-style" title="go back to the shop"><a href="./shipping.html">&#x2190; Back</a> </button>
+           
+         
+                <ul class=" txt-shaddow  ">
+                    <li >Shipping </li>
+                    <li class="blue ">Payment </li>
+                    <li>Confirm </li>
+                    
                    
                 </ul>
-          
-                <hr class="cart-info-line">
+                <hr class="blue-cart-line">   
+
 
 
             <div class="cart-container">
-                <div >
-                 <h2 class="no-items">NO ITEMS</h2>
-                    
-                    
-
+                <div>
+                    <h2> Payment</h2>
+                    <div class="hint-shipping">?</div>
                 </div>
+                <div>
+                    <label for="name-on-card"></label>
+                    <input 
+                    type="text" 
+                    name="name-on-card" 
+                    id="name-on-card" 
+                    placeholder="Name on Card"
+                    title="Enter the name on the card"
+                    class="shadow-style radius-style" >
+
+                    <label for="cardnumber"></label>
+                    <input 
+                    type="number" 
+                    name="cardnumber" 
+                    id="cardnumber" 
+                    placeholder="Card Number"
+                    title="Enter the card number"
+                    class="shadow-style radius-style" >
+                </div>
+                <div>
+                    <label for="mm-yy"></label>
+                    <input 
+                    type="year" 
+                    name="mm-yy" 
+                    id="mm-yy" 
+                    placeholder="MM/YY"
+                    title="enter expire month and year on card "
+                    class="shadow-style radius-style" >
+
+                    <label for="cvv"></label>
+                    <input 
+                    type="number" 
+                    name="cvv" 
+                    id="cvv" 
+                    placeholder="CVV"
+                    title="Enter the cvv number on the card"
+                    class="shadow-style radius-style" >
+                </div>
+                
+
 
                 <div class="total">
-                    <div class="total-info-line">
-                        <p>Items:</p>
-                        <p  class="price-check-out">0</p>
-                    </div>
-                    <hr>
+                    <h3>Order Summary</h3>
+
                     <div class="total-info-line">
                         <p>Subtotal: </p>
-                        <p  class="price-check-out"> 0$</p>
+                        <p  class="price-check-out"> 29.5$</p>
                     </div>
                     <div class="total-info-line">
-                        <p>Sales Tax: </p>
-                        <p  class="price-check-out"> 0$</p>
+                        <p>Shipping: </p>
+                        <p  class="price-check-out"> 5$</p>
                     </div>
-                    <hr>
+                    
                     <div class="total-info-line grand-total">
-                        <p>Grand total: </p>
-                        <p class="price-check-out"> $</p>
+                        <p>Total: </p>
+                        <p class="price-check-out"> 30.5$</p>
                     </div>
-                    <hr class="thicker-line">
-    
-                    <button  class="co-btn shadow-style  empty-cart" > Check out</button>
+                    
+                    <p>Need to fill out forms</p>
+                    <button  class="co-btn shadow-style"> <a href="confirm.html">Pay Now</a></button>
                  
                  
                 </div>
+
+
+             
             </div>
 
 
         </section>
 
-      
+     
     </main>
 
     <footer class="kosugi-style footer-img">
