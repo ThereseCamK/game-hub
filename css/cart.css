@@ -146,13 +146,89 @@ li{
 }
 
 /*Shipping*/
+.shipping .cart-container
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 2%;
+    min-height: 0;
+}
+.shipping .cart-container h2
+{
+    font-size: 1rem;
+    float: left;
+}
+.hint-shipping{
+    
+    height: 15px;
+    width:15px;
+    background-color: black;
+    color:white;
+    border-radius: 50%;
+    text-align: center;
+    padding: 1%;
+    font-size: 1rem;
+    float: right;
+    margin-right: 10%;
+}
 
  li{
     font-size: 1rem;
     display: inline;
-    /* margin-inline: 2vw; */
-    
+    margin: 5%;
+}
 
+
+
+.streetinput{
+    
+    background-image: url('/icons/place.png');
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position-y: 50%;
+    background-position-x: 10px;
+}
+.input{
+    width: 95%;
+    border:none;
+    height: 20px;
+    text-align: center;
+    font-size: 0.7rem;
+    margin-top: 5%;
+}
+.nameinput{
+   
+    background-image: url('/icons/person.png');
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position-y: 50%;
+    background-position-x: 10px;
+}
+.small{
+    width: 45%;
+}
+.shipping .total{
+    border-left: 1px solid black;
+    width: 30vw;
+    left:0;
+    top:0;
+}
+.total .error{
+    color:red;
+}
+.total .ok{
+    color:green;
+}
+button a {
+    text-decoration: none;
+    color: white;
+}
+button:disabled{
+    background-color: #92B0C3;
+    
+}
+.black-txt{
+    color:black;
 }
 
 /*Confirm*/
@@ -163,8 +239,8 @@ li{
     height: 98px;
     position: relative;
     top: 30px;
-    left: 35%;
-    margin-bottom: 100px;
+    left: 30%;
+    margin-bottom: 35px;
     
 }
 .check-mark{
@@ -172,6 +248,16 @@ li{
     font-size: 3rem;
     text-align: center;
     padding: 15%;
+}
+
+.continue-shopping{
+    width: 70%;
+    margin: 0% 15% 20% 15%;
+}
+.confirm-txt{
+
+    font-size: 0.8rem;
+    text-align: center;
 }
 
     

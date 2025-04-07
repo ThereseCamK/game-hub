@@ -321,7 +321,7 @@ main{
 
     color:white;
     border: solid black 2px;
-     /* clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);   */
+    
      border-top-left-radius: 1%;
      border-bottom-left-radius: 1px;
      border-top-right-radius: 360px;
@@ -426,10 +426,7 @@ main{
     margin-top: 10px;
     margin-bottom: 5px;
 }
-/* .card-text p{
-    font-size: 0.8rem;
-    margin-right: 20px;
-} */
+
 .new-game-img{
     grid-area: card-img;
     height: 143px;
