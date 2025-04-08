@@ -2,12 +2,7 @@
     text-decoration: none;
     color:black;
 }
-/* .cart h1{
-    text-align: center;
-    color: #0597F2;
-    text-shadow: 0 4px 4px rgb(0, 0, 0,0.25);
 
-} */
 hr{
     margin:  0 5%;
 }
@@ -28,11 +23,6 @@ hr{
     text-shadow: 0 4px 4px rgb(0, 0, 0,0.25);
 }
 
-li{
-    list-style-type: none;
-    font-weight: bolder;
-    text-align: left;
-}
 
 .cart-info-line{
    clear: left;
@@ -176,6 +166,9 @@ li{
     font-size: 1rem;
     display: inline;
     margin: 5%;
+    list-style-type: none;
+    font-weight: bolder;
+    text-align: left;
 }
 
 
@@ -260,8 +253,38 @@ button:disabled{
     text-align: center;
 }
 
+ @media (min-width:500px){
+    .hint-shipping{
+        margin-right: 30%;
+    }
+    .input{
+        font-size: 1rem;
+        height: 30px;
+    }
+    .nameinput{
+        background-size: 17px;
+    }
+    .small{
+        width:45%;
+    }
+    .first{
+        clear: left;
+        float: left;
+    }
+    .second{
+        float: right;
+    }
+    .small-input-wrapper{
+        max-width: 95%;
+     
+        
+    }
+   
     
+ 
+ }   
 @media (min-width:750px){
+
     .product-info-headers{
         padding-left: 10%;
     }
@@ -270,9 +293,8 @@ button:disabled{
     }
     .total{
         width: 35vw;
-        font-size: 0.8rem;
+        font-size: 1rem;
         position: relative;
-      
         left: 50%;
     }
     .product-name{
@@ -289,13 +311,70 @@ button:disabled{
         text-align: center;
         
     }
+    li{
+        font-size: 1.5rem;
+        margin: 8%;
+    }
+    .co-btn{
+       
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    /*shipping, payment*/
+    .hint-shipping{
+        margin-right: 50%;
+    }
+    .input{
+        font-size: 1rem;
+        height: 30px;
+    }
+    .nameinput{
+        background-size: 17px;
+    }
+    .small{
+        width:45%;
+    }
+    .first{
+        clear: left;
+        float: left;
+    }
+    .second{
+        float: right;
+    }
+    .confirm-circle{
+        top: 40px;
+        left: 40%;
+        margin-bottom: 55px;
+    }
+    .confirm-txt{
+        font-size: 1rem;
+    }
+   
    
 }
 @media (min-width:1300px){
-
+    li{
+       
+        margin: 10%;
+    }
     .cart{
         padding-left: 0% 10% ;
     }
+    .total{
+        padding-left: 10%;
+        max-width: 70%;
+    }
+    .input{
+        height: 40px;
+    }
+    .confirm-circle{
+        top: 40px;
+        left: 45%;
+        margin-bottom: 55px;
+    }
+  
+  
 }
 
     
