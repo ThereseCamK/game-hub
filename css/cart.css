@@ -361,7 +361,12 @@ button:disabled{
     .cart{
         padding-left: 0% 10% ;
     }
+    .cart .total{
+        max-width: 30%;
+        left:50%;
+    }
     .total{
+        top:0;
         padding-left: 10%;
         max-width: 70%;
     }
