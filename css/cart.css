@@ -126,6 +126,9 @@ hr{
     background-color: #1d05f2;
     color:white;
 }
+.co-btn a:hover{
+    color: white;
+}
 .no-items{
     color:grey;
     padding: 10% 30%;
